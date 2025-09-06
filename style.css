@@ -35,10 +35,10 @@ nav a {
 
 nav a:hover {
   color: #ff4b2b;
-}
 
-.hero {
-  background: url('images/banner.jpg') no-repeat center center/cover;
+  .hero {
+  background: url('images/banner.jpg') no-repeat center/cover;
+}
   height: 80vh;
   display: flex;
   justify-content: center;
