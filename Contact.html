@@ -2,30 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact - Sanaya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Sanaya</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body { margin:0; font-family:'Segoe UI',Arial,sans-serif; background:#fff; color:#333; }
+    header { background:#f8f8f8; padding:15px 20px; border-bottom:1px solid #ddd; }
+    nav ul { display:flex; justify-content:center; list-style:none; gap:20px; padding:0; margin:0; }
+    nav a { text-decoration:none; color:#333; font-weight:600; }
+    nav a.active, nav a:hover { color:#e91e63; }
+    .hero-banner { height:250px; background:url('https://images.unsplash.com/photo-1506765515384-028b60a970df?w=1200') center/cover no-repeat; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,.6); }
+    .hero-banner h1 { font-size:42px; }
+    .contact-container { max-width:1000px; margin:40px auto; padding:20px; }
+    .contact-info { margin-bottom:30px; }
+    .contact-info h2 { color:#e91e63; margin-bottom:10px; }
+    .contact-info p { margin:5px 0; }
+    form { display:grid; gap:15px; }
+    input, textarea { width:100%; padding:12px; border:1px solid #ccc; border-radius:6px; font-size:16px; }
+    button { background:#e91e63; color:#fff; border:none; padding:12px 18px; font-size:16px; border-radius:6px; cursor:pointer; transition:.3s; }
+    button:hover { background:#c2185b; }
+    footer { background:#333; color:#fff; padding:30px 20px; text-align:center; margin-top:40px; }
+    footer a { color:#e91e63; text-decoration:none; }
+  </style>
 </head>
 <body>
+
+<!-- ===== Header ===== -->
 <header>
-  <h1>Sanaya</h1>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Shop</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-<section style="padding:40px;">
-  <h2>Contact Us</h2>
-  <p>📱 WhatsApp: <a href="https://wa.me/447308416877">+44 7308 416877</a></p>
-  <p>💳 Easypaisa: 03320973810</p>
-  <p>📧 Email: <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
-  <p>🌐 Social: Facebook | Instagram | TikTok</p>
+<!-- ===== Hero Banner ===== -->
+<section class="hero-banner">
+  <h1>Contact Us</h1>
 </section>
 
+<!-- ===== Contact Section ===== -->
+<main class="contact-container">
+  <div class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>We’d love to hear from you! Whether you have a question about our products, orders, or anything else — our team is here to help.</p>
+    <p><strong>📞 WhatsApp:</strong> <a href="https://wa.me/447308416877">+44 7308 416877</a></p>
+    <p><strong>📱 Easypaisa:</strong> 0332-0973810</p>
+    <p><strong>📧 Email:</strong> <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
+    <p><strong>📍 Address:</strong> Karachi, Pakistan</p>
+  </div>
+
+  <form action="mailto:almasoomking@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</main>
+
+<!-- ===== Footer ===== -->
 <footer>
-  <p>© 2025 Sanaya. All Rights Reserved.</p>
+  <p>📞 WhatsApp: <a href="https://wa.me/447308416877">+44 7308 416877</a> | 📱 Easypaisa: 0332-0973810 | 📧 <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
+  <p>&copy; <span class="year">2025</span> Sanaya Fashion Store. All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>
