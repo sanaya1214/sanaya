@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanaya — Image Gallery</title>
+  <meta name="description" content="Sanaya Image Gallery — product & model photos. Click to enlarge, download or share via WhatsApp." />
+
+  <!-- Simple CSS (inline for one-file ease) -->
+  <style>
+    :root{
+      --accent:#e91e63; --bg:#fafafa; --card:#fff; --muted:#666; --max:1200px;
+      --shadow: 0 10px 30px rgba(15,23,32,0.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#222}
+    .container{max-width:var(--max);margin:0 auto;padding:18px}
+
+    /* Header */
+    header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:60}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px}
+    .logo{font-family:"Playfair Display",serif;font-size:20px;color:#111;font-weight:700}
+    nav a{margin-left:14px;color:#111;text-decoration:none;font-weight:600}
+    .actions a{margin-left:10px;text-decoration:none;color:var(--muted)}
+
+    /* Page title */
+    .hero{padding:28px 0 6px;text-align:center}
+    .hero h1{font-size:28px;margin:6px 0}
+    .hero p{color:var(--muted);margin:6px 0 0}
+
+    /* Filters */
+    .filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:18px 0}
+    .filter-btn{background:var(--card);border:1px solid #eee;padding:8px 12px;border-radius:8px;cursor:pointer;box-shadow:var(--shadow);font-weight:700}
+    .filter-btn.active{background:linear-gradient(90deg,var(--accent),#ff6b98);color:#fff;border-color:transparent}
+
+    /* Gallery grid */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);position:relative}
+    .card img{width:100%;height:280px;object-fit:cover;display:block}
+    .card .meta{padding:12px}
+    .card h4{margin:0;font-size:15px}
+    .card p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    /* Lightbox modal */
+    .lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);z-index:200}
+    .lightbox.open{display:flex}
+    .lb-inner{max-width:1100px;width:calc(100% - 40px);background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 40px 120px rgba(2,6,23,.5)}
+    .lb-media{display:flex;gap:12px}
+    .lb-main{flex:1;background:#000;display:flex;align-items:center;justify-content:center}
+    .lb-main img{max-width:100%;max-height:80vh;display:block}
+    .lb-side{width:120px;background:#fafafa;padding:10px;overflow:auto}
+    .lb-side img{width:100%;height:72px;object-fit:cover;margin-bottom:8px;border-radius:6px;cursor:pointer;border:2px solid transparent}
+    .lb-side img.active{border-color:var(--accent)}
+    .lb-meta{padding:12px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .lb-meta .left{flex:1}
+    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+
+    /* Responsive tweaks */
+    @media (max-width:860px){
+      .lb-side{display:none}
+      .card img{height:220px}
+    }
+
+    /* footer */
+    footer{margin-top:30px;padding:24px 0;background:#111;color:#fff;text-align:center}
+    footer a{color:#ff6b98;text-decoration:none}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="logo"><a href="index.html" style="text-decoration:none;color:inherit">Sanaya</a></div>
+        <nav style="display:flex;align-items:center">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="product.html">Product</a>
+        </nav>
+      </div>
+      <div class="actions">
+        <a href="https://wa.me/447308416877" target="_blank">WhatsApp</a>
+        <a href="mailto:almasoomking@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Image Gallery</h1>
+      <p>High-quality product & model photos — click to enlarge, download or share.</p>
+    </section>
+
+    <!-- Filters -->
+    <div class="filters" role="tablist" aria-label="Gallery filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="dresses">Dresses</button>
+      <button class="filter-btn" data-filter="dupattas">Dupattas</button>
+      <button class="filter-btn" data-filter="footwear">Footwear</button>
+      <button class="filter-btn" data-filter="jewellery">Jewellery</button>
+      <button class="filter-btn" data-filter="models">Models</button>
+    </div>
+
+    <!-- Gallery grid -->
+    <section class="grid" id="gallery">
+      <!-- We'll use Unsplash source links with different queries and signatures to ensure variety -->
+      <!-- Each card has data-category for filtering and data-images for lightbox details -->
+      
+      <!-- 1 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1520975922071-a6b36e1c7b82?w=1400","https://images.unsplash.com/photo-1520975698519-59c9ef8b86db?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1520975922071-a6b36e1c7b82?w=900&q=80&auto=format&fit=crop&s=1" alt="3 Piece Lawn Printed Suit">
+        <div class="meta">
+          <h4>3 Piece Lawn Printed Suit</h4>
+          <p>Rs. 7,432 — Model shoot</p>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1400","https://images.unsplash.com/photo-1521099649105-f69ad21f3246?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900&q=80&auto=format&fit=crop&s=2" alt="Chiffon Dress">
+        <div class="meta">
+          <h4>3 Piece Chiffon Dress</h4>
+          <p>Rs. 7,192 — Studio</p>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=900&q=80&auto=format&fit=crop&s=3" alt="Dupatta Collection">
+        <div class="meta">
+          <h4>Silk Dupatta</h4>
+          <p>Rs. 1,250 — Elegant drape</p>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=4" alt="Khussa Shoes">
+        <div class="meta">
+          <h4>Handmade Khussas</h4>
+          <p>Rs. 1,899 — Traditional footwear</p>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=900&q=80&auto=format&fit=crop&s=5" alt="Traditional Jewellery">
+        <div class="meta">
+          <h4>Traditional Jewellery Set</h4>
+          <p>Rs. 4,500 — Handcrafted</p>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=crop&s=6" alt="Model Portrait">
+        <div class="meta">
+          <h4>Studio Model Shoot</h4>
+          <p>Editorial — Fashion</p>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=900&q=80&auto=format&fit=crop&s=7" alt="Lawn Print">
+        <div class="meta"><h4>Lawn Printed Outfit</h4><p>Rs. 6,200</p></div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&q=80&auto=format&fit=crop&s=8" alt="Dupatta Scarves">
+        <div class="meta"><h4>Designer Dupatta</h4><p>Rs. 2,100</p></div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1520975918310-0468e23d6a6b?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1520975918310-0468e23d6a6b?w=900&q=80&auto=format&fit=crop&s=9" alt="Party Gown">
+        <div class="meta"><h4>Party Gown</h4><p>Rs. 9,500</p></div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=900&q=80&auto=format&fit=crop&s=10" alt="Bracelet">
+        <div class="meta"><h4>Gold Bracelet</h4><p>Rs. 3,250</p></div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=11" alt="Flats">
+        <div class="meta"><h4>Comfort Flats</h4><p>Rs. 1,490</p></div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=900&q=80&auto=format&fit=crop&s=12" alt="Outdoor Model">
+        <div class="meta"><h4>Outdoor Model Shoot</h4><p>Editorial</p></div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1520975922071-a6b36e1c7b82?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1520975922071-a6b36e1c7b82?w=900&q=80&auto=format&fit=crop&s=13" alt="Casual Dress">
+        <div class="meta"><h4>Casual Lawn Dress</h4><p>Rs. 3,300</p></div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=900&q=80&auto=format&fit=crop&s=14" alt="Luxury Dupatta">
+        <div class="meta"><h4>Luxury Dupatta</h4><p>Rs. 2,850</p></div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=900&q=80&auto=format&fit=crop&s=15" alt="Necklace">
+        <div class="meta"><h4>Statement Necklace</h4><p>Rs. 5,600</p></div>
+      </article>
+
+      <!-- 16 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=crop&s=16" alt="Studio Portrait">
+        <div class="meta"><h4>Studio Portrait</h4><p>Fashion</p></div>
+      </article>
+
+      <!-- 17 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=900&q=80&auto=format&fit=crop&s=17" alt="Floral Print">
+        <div class="meta"><h4>Floral Print Dress</h4><p>Rs. 4,100</p></div>
+      </article>
+
+      <!-- 18 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&q=80&auto=format&fit=crop&s=18" alt="Silk Shawl">
+        <div class="meta"><h4>Silk Shawl</h4><p>Rs. 1,950</p></div>
+      </article>
+
+      <!-- 19 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=19" alt="Embroidered Khussa">
+        <div class="meta"><h4>Embroidered Khussa</h4><p>Rs. 2,150</p></div>
+      </article>
+
+      <!-- 20 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=900&q=80&auto=format&fit=crop&s=20" alt="Ring">
+        <div class="meta"><h4>Designer Ring</h4><p>Rs. 2,750</p></div>
+      </article>
+
+      <!-- 21 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900&q=80&auto=format&fit=crop&s=21" alt="Chiffon Set">
+        <div class="meta"><h4>Chiffon Set</h4><p>Rs. 7,320</p></div>
+      </article>
+
+      <!-- 22 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=900&q=80&auto=format&fit=crop&s=22" alt="Street Model">
+        <div class="meta"><h4>Street Model</h4><p>Editorial</p></div>
+      </article>
+
+      <!-- 23 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=900&q=80&auto=format&fit=crop&s=23" alt="Cotton Dupatta">
+        <div class="meta"><h4>Cotton Dupatta</h4><p>Rs. 950</p></div>
+      </article>
+
+      <!-- 24 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=24" alt="Leather Sandals">
+        <div class="meta"><h4>Leather Sandals</h4><p>Rs. 2,450</p></div>
+      </article>
+
+      <!-- 25 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=900&q=80&auto=format&fit=crop&s=25" alt="Earrings">
+        <div class="meta"><h4>Pearl Earrings</h4><p>Rs. 2,100</p></div>
+      </article>
+
+      <!-- 26 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=900&q=80&auto=format&fit=crop&s=26" alt="Print Dress">
+        <div class="meta"><h4>Print Dress</h4><p>Rs. 3,900</p></div>
+      </article>
+
+      <!-- 27 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=crop&s=27" alt="Portrait">
+        <div class="meta"><h4>Portrait</h4><p>Editorial</p></div>
+      </article>
+
+      <!-- 28 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&q=80&auto=format&fit=crop&s=28" alt="Embroidered Dupatta">
+        <div class="meta"><h4>Embroidered Dupatta</h4><p>Rs. 3,250</p></div>
+      </article>
+
+      <!-- 29 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=29" alt="Party Heels">
+        <div class="meta"><h4>Party Heels</h4><p>Rs. 3,700</p></div>
+      </article>
+
+      <!-- 30 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=900&q=80&auto=format&fit=crop&s=30" alt="Antique Ring">
+        <div class="meta"><h4>Antique Ring</h4><p>Rs. 4,100</p></div>
+      </article>
+
+      <!-- 31 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1520975922071-a6b36e1c7b82?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1520975922071-a6b36e1c7b82?w=900&q=80&auto=format&fit=crop&s=31" alt="Summer Dress">
+        <div class="meta"><h4>Summer Dress</h4><p>Rs. 3,100</p></div>
+      </article>
+
+      <!-- 32 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=900&q=80&auto=format&fit=crop&s=32" alt="Festive Dupatta">
+        <div class="meta"><h4>Festive Dupatta</h4><p>Rs. 4,500</p></div>
+      </article>
+
+      <!-- 33 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=33" alt="Summer Sandals">
+        <div class="meta"><h4>Summer Sandals</h4><p>Rs. 1,799</p></div>
+      </article>
+
+      <!-- 34 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=900&q=80&auto=format&fit=crop&s=34" alt="Fashion Portrait">
+        <div class="meta"><h4>Fashion Portrait</h4><p>Editorial</p></div>
+      </article>
+
+      <!-- 35 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=900&q=80&auto=format&fit=crop&s=35" alt="Gold Set">
+        <div class="meta"><h4>Gold Set</h4><p>Rs. 12,500</p></div>
+      </article>
+
+      <!-- 36 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=900&q=80&auto=format&fit=crop&s=36" alt="Boho Dress">
+        <div class="meta"><h4>Boho Dress</h4><p>Rs. 4,450</p></div>
+      </article>
+
+      <!-- 37 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&q=80&auto=format&fit=crop&s=37" alt="Light Dupatta">
+        <div class="meta"><h4>Light Dupatta</h4><p>Rs. 890</p></div>
+      </article>
+
+      <!-- 38 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=38" alt="Classic Loafers">
+        <div class="meta"><h4>Classic Loafers</h4><p>Rs. 2,350</p></div>
+      </article>
+
+      <!-- 39 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=crop&s=39" alt="Editorial Model">
+        <div class="meta"><h4>Editorial Model</h4><p>Magazine</p></div>
+      </article>
+
+      <!-- 40 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=900&q=80&auto=format&fit=crop&s=40" alt="Cuff">
+        <div class="meta"><h4>Silver Cuff</h4><p>Rs. 1,990</p></div>
+      </article>
+
+      <!-- 41 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1520975922071-a6b36e1c7b82?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1520975922071-a6b36e1c7b82?w=900&q=80&auto=format&fit=crop&s=41" alt="Summer Set">
+        <div class="meta"><h4>Summer Set</h4><p>Rs. 3,650</p></div>
+      </article>
+
+      <!-- 42 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=900&q=80&auto=format&fit=crop&s=42" alt="Printed Dupatta">
+        <div class="meta"><h4>Printed Dupatta</h4><p>Rs. 1,100</p></div>
+      </article>
+
+      <!-- 43 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=43" alt="Mules">
+        <div class="meta"><h4>Stylish Mules</h4><p>Rs. 2,050</p></div>
+      </article>
+
+      <!-- 44 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=900&q=80&auto=format&fit=crop&s=44" alt="Lifestyle Model">
+        <div class="meta"><h4>Lifestyle Model</h4><p>Campaign</p></div>
+      </article>
+
+      <!-- 45 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1543062876-2a0d7df6b8e4?w=900&q=80&auto=format&fit=crop&s=45" alt="Brooch">
+        <div class="meta"><h4>Vintage Brooch</h4><p>Rs. 1,450</p></div>
+      </article>
+
+      <!-- 46 -->
+      <article class="card" data-category="dresses" data-images='["https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=900&q=80&auto=format&fit=crop&s=46" alt="Maxi Dress">
+        <div class="meta"><h4>Maxi Dress</h4><p>Rs. 5,100</p></div>
+      </article>
+
+      <!-- 47 -->
+      <article class="card" data-category="dupattas" data-images='["https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1495121605193-b116b5b09f5b?w=900&q=80&auto=format&fit=crop&s=47" alt="Net Dupatta">
+        <div class="meta"><h4>Net Dupatta</h4><p>Rs. 2,650</p></div>
+      </article>
+
+      <!-- 48 -->
+      <article class="card" data-category="footwear" data-images='["https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741492245-5f2f86ef3c0e?w=900&q=80&auto=format&fit=crop&s=48" alt="Sneakers">
+        <div class="meta"><h4>Comfort Sneakers</h4><p>Rs. 3,200</p></div>
+      </article>
+
+      <!-- 49 -->
+      <article class="card" data-category="models" data-images='["https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=crop&s=49" alt="Glam Model">
+        <div class="meta"><h4>Glam Model</h4><p>Magazine</p></div>
+      </article>
+
+      <!-- 50 -->
+      <article class="card" data-category="jewellery" data-images='["https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=1400"]'>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1476112891202-2b4a8ef3d9e6?w=900&q=80&auto=format&fit=crop&s=50" alt="Charm Pendant">
+        <div class="meta"><h4>Charm Pendant</h4><p>Rs. 1,899</p></div>
+      </article>
+
+    </section>
+    <!-- end grid -->
+  </main>
+
+  <!-- Lightbox / Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lb-inner" role="dialog" aria-modal="true" aria-label="Image preview">
+      <div class="lb-media">
+        <div class="lb-main">
+          <img id="lb-image" src="" alt="Preview">
+        </div>
+        <div class="lb-side" id="lb-thumbs" aria-hidden="false"></div>
+      </div>
+      <div class="lb-meta">
+        <div class="left">
+          <strong id="lb-title"></strong>
+          <div id="lb-caption" style="color:var(--muted);font-size:13px;margin-top:6px"></div>
+        </div>
+        <div class="right">
+          <a id="lb-download" class="btn" href="#" target="_blank" rel="noopener">Download</a>
+          <a id="lb-wa" class="btn" href="#" target="_blank" rel="noopener" style="background:#25D366">Share</a>
+          <button id="lb-close" class="btn" style="background:#444;margin-left:8px">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact: WhatsApp <a href="https://wa.me/447308416877" target="_blank">+44 7308 416877</a> | Easypaisa: 03320973810 | Email: <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
+      <p style="margin-top:8px;color:#ddd;font-size:13px">Images are from Unsplash (free). Replace src with your own images in the repository when ready.</p>
+    </div>
+  </footer>
+
+  <!-- Script: filtering, lightbox, keyboard, lazy basics -->
+  <script>
+    (function(){
+      // Elements
+      const filters = document.querySelectorAll('.filter-btn');
+      const cards = Array.from(document.querySelectorAll('.card'));
+      const lightbox = document.getElementById('lightbox');
+      const lbImage = document.getElementById('lb-image');
+      const lbThumbs = document.getElementById('lb-thumbs');
+      const lbTitle = document.getElementById('lb-title');
+      const lbCaption = document.getElementById('lb-caption');
+      const lbDownload = document.getElementById('lb-download');
+      const lbWA = document.getElementById('lb-wa');
+      const lbClose = document.getElementById('lb-close');
+
+      // Filter click
+      filters.forEach(btn=>{
+        btn.addEventListener('click', ()=> {
+          filters.forEach(b=>b.classList.remove('active'));
+          btn.classList.add('active');
+          const f = btn.dataset.filter;
+          cards.forEach(c=>{
+            if(f==='all' || c.dataset.category === f) c.style.display = '';
+            else c.style.display = 'none';
+          });
+          // scroll to gallery top
+          document.getElementById('gallery').scrollIntoView({behavior:'smooth', block:'start'});
+        });
+      });
+
+      // Open lightbox when clicking a card
+      cards.forEach(card=>{
+        card.addEventListener('click', (e)=>{
+          // prevent if clicked on buttons/links inside
+          if(e.target.tagName.toLowerCase() === 'a' || e.target.tagName.toLowerCase() === 'button') return;
+          const images = JSON.parse(card.dataset.images || '[]');
+          const title = card.querySelector('h4')?.textContent || '';
+          const caption = card.querySelector('p')?.textContent || '';
+          openLightbox(images, title, caption);
+        });
+      });
+
+      function openLightbox(images, title, caption){
+        if(!images || images.length===0) return;
+        lbImage.src = images[0];
+        lbTitle.textContent = title;
+        lbCaption.textContent = caption;
+        // thumbs
+        lbThumbs.innerHTML = '';
+        images.forEach((src, i)=>{
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = title + ' ' + (i+1);
+          if(i===0) img.classList.add('active');
+          img.addEventListener('click', ()=> {
+            lbImage.src = src;
+            Array.from(lbThumbs.querySelectorAll('img')).forEach(im=>im.classList.remove('active'));
+            img.classList.add('active');
+          });
+          lbThumbs.appendChild(img);
+        });
+        // download link
+        lbDownload.href = images[0];
+        // whatsapp share
+        const waText = encodeURIComponent(title + '\\n' + caption + '\\n' + images[0]);
+        lbWA.href = 'https://wa.me/447308416877?text=' + waText;
+        // show
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden','false');
+        // trap focus simple
+        lbClose.focus();
+      }
+
+      // Close handlers
+      function closeLB(){ lightbox.classList.remove('open'); lightbox.setAttribute('aria-hidden','true'); lbImage.src=''; }
+      lbClose.addEventListener('click', closeLB);
+      lightbox.addEventListener('click', (e)=> { if(e.target === lightbox) closeLB(); });
+      document.addEventListener('keydown', (e)=> { if(e.key === 'Escape') closeLB(); });
+
+      // Accessibility: keyboard thumbnails
+      lbThumbs.addEventListener('keydown', (e)=>{
+        const imgs = Array.from(lbThumbs.querySelectorAll('img'));
+        const idx = imgs.findIndex(i=>i.classList.contains('active'));
+        if(e.key === 'ArrowRight' && idx < imgs.length-1) imgs[idx+1].click();
+        if(e.key === 'ArrowLeft' && idx > 0) imgs[idx-1].click();
+      });
+
+      // Lazy-loading hint: images have loading="lazy" attribute already.
+      // Optionally: simple intersection observer to fade-in cards
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(ent=>{
+          if(ent.isIntersecting) ent.target.style.opacity = 1;
+        });
+      }, {threshold:0.06});
+      document.querySelectorAll('.card').forEach(c=>{ c.style.opacity=0; io.observe(c); });
+
+    })();
+  </script>
+</body>
+</html>
