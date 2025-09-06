@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout - Sanaya</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family:'Segoe UI',Arial,sans-serif; margin:0; background:#fafafa; }
+    header { background:#f8f8f8; padding:15px 20px; border-bottom:1px solid #ddd; }
+    nav ul { display:flex; justify-content:center; list-style:none; gap:20px; padding:0; margin:0; }
+    nav a { text-decoration:none; color:#333; font-weight:600; }
+    nav a.active, nav a:hover { color:#e91e63; }
+    .checkout-container { max-width:900px; margin:40px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,.05); }
+    h1 { margin-bottom:20px; text-align:center; }
+    form { display:grid; gap:15px; }
+    input, select, textarea { padding:12px; border:1px solid #ccc; border-radius:6px; width:100%; font-size:16px; }
+    .btn { background:#e91e63; color:#fff; border:none; padding:12px 18px; border-radius:6px; cursor:pointer; }
+    .btn:hover { background:#c2185b; }
+    .order-summary { margin-top:30px; border-top:1px solid #ddd; padding-top:20px; }
+    footer { background:#333; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html" class="active">Checkout</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="checkout-container">
+  <h1>Checkout</h1>
+
+  <form action="#" method="POST">
+    <h2>Billing Details</h2>
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <textarea name="address" placeholder="Full Address" rows="4" required></textarea>
+
+    <h2>Payment Method</h2>
+    <select name="payment" required>
+      <option value="">Select Payment Method</option>
+      <option value="easypaisa">Easypaisa (03320973810)</option>
+      <option value="cod">Cash on Delivery</option>
+    </select>
+
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <p>Elegant Dress - Rs. 3,500</p>
+      <p>Casual Shirt (x2) - Rs. 4,400</p>
+      <hr>
+      <h3>Total: Rs. 7,900</h3>
+    </div>
+
+    <button type="submit" class="btn">Place Order</button>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2025 Sanaya Fashion Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
