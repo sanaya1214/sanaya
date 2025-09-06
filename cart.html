@@ -1,82 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Cart - Sanaya</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body { font-family:'Segoe UI',Arial,sans-serif; margin:0; background:#fafafa; }
-    header { background:#f8f8f8; padding:15px 20px; border-bottom:1px solid #ddd; }
-    nav ul { display:flex; justify-content:center; list-style:none; gap:20px; padding:0; margin:0; }
-    nav a { text-decoration:none; color:#333; font-weight:600; }
-    nav a.active, nav a:hover { color:#e91e63; }
-    .cart-container { max-width:1000px; margin:40px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,.05); }
-    h1 { margin-bottom:20px; text-align:center; }
-    table { width:100%; border-collapse:collapse; margin-bottom:20px; }
-    th, td { padding:12px; border-bottom:1px solid #ddd; text-align:center; }
-    th { background:#f4f4f4; }
-    td img { width:60px; height:auto; border-radius:4px; }
-    .cart-summary { text-align:right; margin-top:20px; }
-    .cart-summary h2 { margin-bottom:10px; }
-    .btn { background:#e91e63; color:#fff; border:none; padding:12px 18px; border-radius:6px; cursor:pointer; text-decoration:none; }
-    .btn:hover { background:#c2185b; }
-    footer { background:#333; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanaya Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="cart.html" class="active">Cart</a></li>
-      <li><a href="checkout.html">Checkout</a></li>
-    </ul>
-  </nav>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">Sanaya</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="images.html">Images</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="actions">
+      <a href="cart.html" class="cart-btn" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+    </div>
+  </div>
 </header>
 
-<main class="cart-container">
-  <h1>Your Shopping Cart</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Product</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Qty</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><img src="https://via.placeholder.com/100x120" alt="Product"></td>
-        <td>Elegant Dress</td>
-        <td>Rs. 3,500</td>
-        <td><input type="number" value="1" min="1" style="width:50px;"></td>
-        <td>Rs. 3,500</td>
-      </tr>
-      <tr>
-        <td><img src="https://via.placeholder.com/100x120" alt="Product"></td>
-        <td>Casual Shirt</td>
-        <td>Rs. 2,200</td>
-        <td><input type="number" value="2" min="1" style="width:50px;"></td>
-        <td>Rs. 4,400</td>
-      </tr>
-    </tbody>
-  </table>
-
+<section class="container">
+  <h1>Your Cart</h1>
+  <div id="cart-items"></div>
   <div class="cart-summary">
-    <h2>Subtotal: Rs. 7,900</h2>
-    <a href="checkout.html" class="btn">Proceed to Checkout</a>
+    <div id="cart-total"></div>
+    <a class="btn" href="checkout.html">Proceed to Checkout</a>
   </div>
-</main>
+</section>
 
-<footer>
-  <p>&copy; 2025 Sanaya Fashion Store. All Rights Reserved.</p>
+<footer class="site-footer">
+  <div class="container grid-3">
+    <div>
+      <h4>Sanaya</h4>
+      <p>Trendy ladies clothes & online shopping.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>WhatsApp: +44 7308 416877</li>
+        <li>Easypaisa: 03320973810</li>
+        <li>Email: almasoomking@gmail.com</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">© 2025 Sanaya. All rights reserved.</div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

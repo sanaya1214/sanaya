@@ -1,80 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us - Sanaya</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body { margin:0; font-family:'Segoe UI',Arial,sans-serif; background:#fff; color:#333; }
-    header { background:#f8f8f8; padding:15px 20px; border-bottom:1px solid #ddd; }
-    nav ul { display:flex; justify-content:center; list-style:none; gap:20px; padding:0; margin:0; }
-    nav a { text-decoration:none; color:#333; font-weight:600; }
-    nav a.active, nav a:hover { color:#e91e63; }
-    .hero-banner { height:250px; background:url('https://images.unsplash.com/photo-1520974735194-611b2f1f94a4?w=1200') center/cover no-repeat; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,.6); }
-    .hero-banner h1 { font-size:42px; }
-    .about-container { max-width:1000px; margin:40px auto; padding:20px; line-height:1.7; }
-    .about-container h2 { font-size:28px; margin-bottom:15px; color:#e91e63; }
-    .about-container p { margin-bottom:15px; }
-    .about-img { width:100%; max-height:400px; border-radius:10px; object-fit:cover; margin:20px 0; }
-    footer { background:#333; color:#fff; padding:30px 20px; text-align:center; margin-top:40px; }
-    footer a { color:#e91e63; text-decoration:none; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanaya Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<!-- ===== Header ===== -->
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">Sanaya</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="images.html">Images</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="actions">
+      <a href="cart.html" class="cart-btn" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+    </div>
+  </div>
 </header>
 
-<!-- ===== Hero Banner ===== -->
-<section class="hero-banner">
-  <h1>About Us</h1>
+<section class="container">
+  <h1>About Sanaya</h1>
+  <p>Sanaya offers modern, comfortable and elegant outfits for all occasions. This demo store is built for GitHub Pages and uses royalty‑free placeholder images.</p>
+  <div class="grid-3">
+    <img class="rounded" src="assets/images/product_5.jpg" alt="About 1">
+    <img class="rounded" src="assets/images/product_10.jpg" alt="About 2">
+    <img class="rounded" src="assets/images/product_15.jpg" alt="About 3">
+  </div>
 </section>
 
-<!-- ===== About Content ===== -->
-<main class="about-container">
-  <h2>Welcome to Sanaya Fashion Store</h2>
-  <p>
-    At <strong>Sanaya</strong>, we believe that fashion is more than just clothing – it is an expression of individuality, culture, and confidence. 
-    Since our launch, our mission has been to provide premium quality ethnic wear for women that combines tradition with modern elegance.
-  </p>
-
-  <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?w=1000" alt="Sanaya Fashion" class="about-img">
-
-  <p>
-    Our collection includes beautifully crafted <strong>embroidered dresses, solids, dupattas, khussas, and jewellery</strong> that celebrate the richness of South Asian heritage. 
-    We take pride in sourcing the finest fabrics and ensuring every piece reflects artistry and sophistication.
-  </p>
-
-  <h2>Our Promise</h2>
-  <p>
-    ✨ Free shipping on orders above Rs.4000 <br>
-    ✨ Easy returns & exchanges within 10 days <br>
-    ✨ 24/7 customer support to assist you anytime <br>
-    ✨ 100% secure payments through Easypaisa & other trusted gateways
-  </p>
-
-  <h2>Why Choose Us?</h2>
-  <p>
-    We aim to make every woman feel empowered, elegant, and confident. 
-    With Sanaya, you don’t just wear fashion—you wear a story of culture, craftsmanship, and timeless beauty.
-  </p>
-</main>
-
-<!-- ===== Footer ===== -->
-<footer>
-  <p>📞 WhatsApp: <a href="https://wa.me/447308416877">+44 7308 416877</a> | 📱 Easypaisa: 0332-0973810 | 📧 <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
-  <p>&copy; <span class="year">2025</span> Sanaya Fashion Store. All Rights Reserved.</p>
+<footer class="site-footer">
+  <div class="container grid-3">
+    <div>
+      <h4>Sanaya</h4>
+      <p>Trendy ladies clothes & online shopping.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>WhatsApp: +44 7308 416877</li>
+        <li>Easypaisa: 03320973810</li>
+        <li>Email: almasoomking@gmail.com</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">© 2025 Sanaya. All rights reserved.</div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
