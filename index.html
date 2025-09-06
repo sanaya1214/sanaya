@@ -3,61 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanaya - Online Girls Clothing Store</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sanaya - Online Shopping</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #e91e63;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background: #c2185b;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      color: #777;
+      font-size: 0.9rem;
+    }
+    .product button {
+      background: #e91e63;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .product button:hover {
+      background: #c2185b;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    footer a {
+      color: #e91e63;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Sanaya Clothing</h1>
-    <nav>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Welcome to Sanaya</h1>
+    <p>Trendy Ladies Clothes & Online Shopping</p>
   </header>
 
-  <section id="hero">
-    <h2>Welcome to Sanaya</h2>
-    <p>Trendy and stylish girls' clothing at your fingertips.</p>
-  </section>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
 
-  <section id="products">
-    <h2>Our Collection</h2>
-    <div class="product-list">
-      <div class="product">
-        <img src="https://via.placeholder.com/200" alt="Summer Dress">
-        <h3>Summer Dress</h3>
-        <p>PKR 2500</p>
-        <button onclick="addToCart('Summer Dress')">Add to Cart</button>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/200" alt="Casual Kurti">
-        <h3>Casual Kurti</h3>
-        <p>PKR 1800</p>
-        <button onclick="addToCart('Casual Kurti')">Add to Cart</button>
-      </div>
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x400" alt="Product 1">
+      <h3>Stylish Dress</h3>
+      <p>Beautiful and comfortable design</p>
+      <button>Shop Now</button>
     </div>
-    <br>
-    <button onclick="showCart()">🛒 View Cart</button>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Easypaisa:</strong> 03320973810</p>
-    <p><strong>Email:</strong> <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
-    <p><strong>WhatsApp:</strong> 
-      <a href="https://wa.me/447308416877" target="_blank">+44 7308 416877</a>
-    </p>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x400" alt="Product 2">
+      <h3>Modern Outfit</h3>
+      <p>Trendy fashion for all occasions</p>
+      <button>Shop Now</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x400" alt="Product 3">
+      <h3>Elegant Style</h3>
+      <p>Perfect choice for parties</p>
+      <button>Shop Now</button>
+    </div>
   </section>
 
   <footer>
-    <p>Follow us on 
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">Twitter</a>
-    </p>
-    <p>&copy; 2025 Sanaya Clothing</p>
+    <p>📞 WhatsApp: <a href="https://wa.me/447308416877" target="_blank">+44 7308 416877</a></p>
+    <p>💳 Easypaisa: 03320973810</p>
+    <p>📧 Email: <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
+    <p>&copy; 2025 Sanaya. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
