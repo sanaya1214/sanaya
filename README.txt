@@ -1,0 +1,1 @@
+Edit products.json or products.csv. To use Google Sheets, publish as CSV and set window.SHEETS_CSV_URL in HTML.
