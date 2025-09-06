@@ -1,30 +1,553 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sanaya — Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <button id="mobile-menu-btn-2" class="hamburger" aria-label="menu">☰</button>
-      <div class="logo"><a href="index.html"><span class="logo-title">Sanaya</span></a></div>
-      <nav class="main-nav" id="main-nav-2">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="header-actions"><a class="icon-link" href="#cart">🛒<span id="cart-bubble-2" class="cart-bubble">0</span></a></div>
-    </div>
-  </header>
+<!-- START OF 50 PRODUCTS -->
+<!-- I'll paste them in groups of 10 for readability -->
 
-  <main class="container">
-    <h1 style="margin:22px 0 8px">Shop — All Products</h1>
-    <p style="color:var(--muted);margin-bottom:18px">50 sample products — click Add to Cart to test functionality. Replace images/prices/sizes later as needed.</p>
+<!-- 1 -->
+<div class="product-card" id="p1">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=201" alt="Product 1">
+  <h4>Luxury Lawn Printed 1</h4>
+  <p class="price">Rs. 4,500</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Lawn Printed 1',4500)">Add to Cart</button>
+</div>
 
-    <div class="products-grid" id="shop-grid">
-      <!-- We'll output 50 product cards statically -->
+<!-- 2 -->
+<div class="product-card" id="p2">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=202" alt="Product 2">
+  <h4>Luxury Lawn Printed 2</h4>
+  <p class="price">Rs. 4,750</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Lawn Printed 2',4750)">Add to Cart</button>
+</div>
+
+<!-- 3 -->
+<div class="product-card" id="p3">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=203" alt="Product 3">
+  <h4>Embroidered Kurti 1</h4>
+  <p class="price">Rs. 3,200</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 1',3200)">Add to Cart</button>
+</div>
+
+<!-- 4 -->
+<div class="product-card" id="p4">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=204" alt="Product 4">
+  <h4>Embroidered Kurti 2</h4>
+  <p class="price">Rs. 3,400</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 2',3400)">Add to Cart</button>
+</div>
+
+<!-- 5 -->
+<div class="product-card" id="p5">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=205" alt="Product 5">
+  <h4>Party Wear Gown</h4>
+  <p class="price">Rs. 9,000</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Party Wear Gown',9000)">Add to Cart</button>
+</div>
+
+<!-- 6 -->
+<div class="product-card" id="p6">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=206" alt="Product 6">
+  <h4>Casual Top 1</h4>
+  <p class="price">Rs. 1,350</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Casual Top 1',1350)">Add to Cart</button>
+</div>
+
+<!-- 7 -->
+<div class="product-card" id="p7">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=207" alt="Product 7">
+  <h4>Denim Jacket 1</h4>
+  <p class="price">Rs. 2,899</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Denim Jacket 1',2899)">Add to Cart</button>
+</div>
+
+<!-- 8 -->
+<div class="product-card" id="p8">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=208" alt="Product 8">
+  <h4>Luxury Suit 1</h4>
+  <p class="price">Rs. 8,250</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Suit 1',8250)">Add to Cart</button>
+</div>
+
+<!-- 9 -->
+<div class="product-card" id="p9">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=209" alt="Product 9">
+  <h4>Elegant Shawl 1</h4>
+  <p class="price">Rs. 1,599</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>One Size</option></select>
+  </div>
+  <button onclick="addToCart('Elegant Shawl 1',1599)">Add to Cart</button>
+</div>
+
+<!-- 10 -->
+<div class="product-card" id="p10">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=210" alt="Product 10">
+  <h4>Classic Outfit 1</h4>
+  <p class="price">Rs. 3,800</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Classic Outfit 1',3800)">Add to Cart</button>
+</div>
+
+<!-- 11 -->
+<div class="product-card" id="p11">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=211" alt="Product 11">
+  <h4>Luxury Lawn Printed 3</h4>
+  <p class="price">Rs. 4,600</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Lawn Printed 3',4600)">Add to Cart</button>
+</div>
+
+<!-- 12 -->
+<div class="product-card" id="p12">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=212" alt="Product 12">
+  <h4>Luxury Lawn Printed 4</h4>
+  <p class="price">Rs. 4,300</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Lawn Printed 4',4300)">Add to Cart</button>
+</div>
+
+<!-- 13 -->
+<div class="product-card" id="p13">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=213" alt="Product 13">
+  <h4>Embroidered Kurti 3</h4>
+  <p class="price">Rs. 3,950</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 3',3950)">Add to Cart</button>
+</div>
+
+<!-- 14 -->
+<div class="product-card" id="p14">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=214" alt="Product 14">
+  <h4>Embroidered Kurti 4</h4>
+  <p class="price">Rs. 3,700</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 4',3700)">Add to Cart</button>
+</div>
+
+<!-- 15 -->
+<div class="product-card" id="p15">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=215" alt="Product 15">
+  <h4>Party Wear Gown 2</h4>
+  <p class="price">Rs. 8,800</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Party Wear Gown 2',8800)">Add to Cart</button>
+</div>
+
+<!-- 16 -->
+<div class="product-card" id="p16">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=216" alt="Product 16">
+  <h4>Casual Top 2</h4>
+  <p class="price">Rs. 1,450</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Casual Top 2',1450)">Add to Cart</button>
+</div>
+
+<!-- 17 -->
+<div class="product-card" id="p17">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=217" alt="Product 17">
+  <h4>Denim Jacket 2</h4>
+  <p class="price">Rs. 3,100</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Denim Jacket 2',3100)">Add to Cart</button>
+</div>
+
+<!-- 18 -->
+<div class="product-card" id="p18">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=218" alt="Product 18">
+  <h4>Luxury Suit 2</h4>
+  <p class="price">Rs. 7,950</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Suit 2',7950)">Add to Cart</button>
+</div>
+
+<!-- 19 -->
+<div class="product-card" id="p19">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=219" alt="Product 19">
+  <h4>Elegant Shawl 2</h4>
+  <p class="price">Rs. 1,799</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>One Size</option></select>
+  </div>
+  <button onclick="addToCart('Elegant Shawl 2',1799)">Add to Cart</button>
+</div>
+
+<!-- 20 -->
+<div class="product-card" id="p20">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=220" alt="Product 20">
+  <h4>Classic Outfit 2</h4>
+  <p class="price">Rs. 3,600</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Classic Outfit 2',3600)">Add to Cart</button>
+</div>
+
+<!-- 21 -->
+<div class="product-card" id="p21">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=221" alt="Product 21">
+  <h4>Luxury Lawn Printed 5</h4>
+  <p class="price">Rs. 5,000</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Lawn Printed 5',5000)">Add to Cart</button>
+</div>
+
+<!-- 22 -->
+<div class="product-card" id="p22">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=222" alt="Product 22">
+  <h4>Lawn Printed 6</h4>
+  <p class="price">Rs. 4,200</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Lawn Printed 6',4200)">Add to Cart</button>
+</div>
+
+<!-- 23 -->
+<div class="product-card" id="p23">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=223" alt="Product 23">
+  <h4>Embroidered Kurti 5</h4>
+  <p class="price">Rs. 3,450</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 5',3450)">Add to Cart</button>
+</div>
+
+<!-- 24 -->
+<div class="product-card" id="p24">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=224" alt="Product 24">
+  <h4>Embroidered Kurti 6</h4>
+  <p class="price">Rs. 3,600</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 6',3600)">Add to Cart</button>
+</div>
+
+<!-- 25 -->
+<div class="product-card" id="p25">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=225" alt="Product 25">
+  <h4>Party Wear Gown 3</h4>
+  <p class="price">Rs. 10,200</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Party Wear Gown 3',10200)">Add to Cart</button>
+</div>
+
+<!-- 26 -->
+<div class="product-card" id="p26">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=226" alt="Product 26">
+  <h4>Casual Top 3</h4>
+  <p class="price">Rs. 1,250</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Casual Top 3',1250)">Add to Cart</button>
+</div>
+
+<!-- 27 -->
+<div class="product-card" id="p27">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=227" alt="Product 27">
+  <h4>Denim Jacket 3</h4>
+  <p class="price">Rs. 2,999</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Denim Jacket 3',2999)">Add to Cart</button>
+</div>
+
+<!-- 28 -->
+<div class="product-card" id="p28">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=228" alt="Product 28">
+  <h4>Luxury Suit 3</h4>
+  <p class="price">Rs. 6,750</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Suit 3',6750)">Add to Cart</button>
+</div>
+
+<!-- 29 -->
+<div class="product-card" id="p29">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=229" alt="Product 29">
+  <h4>Elegant Shawl 3</h4>
+  <p class="price">Rs. 2,199</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>One Size</option></select>
+  </div>
+  <button onclick="addToCart('Elegant Shawl 3',2199)">Add to Cart</button>
+</div>
+
+<!-- 30 -->
+<div class="product-card" id="p30">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=230" alt="Product 30">
+  <h4>Classic Outfit 3</h4>
+  <p class="price">Rs. 3,300</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Classic Outfit 3',3300)">Add to Cart</button>
+</div>
+
+<!-- 31 -->
+<div class="product-card" id="p31">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=231" alt="Product 31">
+  <h4>Luxury Lawn Printed 7</h4>
+  <p class="price">Rs. 4,900</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Lawn Printed 7',4900)">Add to Cart</button>
+</div>
+
+<!-- 32 -->
+<div class="product-card" id="p32">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=232" alt="Product 32">
+  <h4>Lawn Printed 8</h4>
+  <p class="price">Rs. 4,150</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Lawn Printed 8',4150)">Add to Cart</button>
+</div>
+
+<!-- 33 -->
+<div class="product-card" id="p33">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=233" alt="Product 33">
+  <h4>Embroidered Kurti 7</h4>
+  <p class="price">Rs. 3,850</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 7',3850)">Add to Cart</button>
+</div>
+
+<!-- 34 -->
+<div class="product-card" id="p34">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=234" alt="Product 34">
+  <h4>Embroidered Kurti 8</h4>
+  <p class="price">Rs. 3,600</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 8',3600)">Add to Cart</button>
+</div>
+
+<!-- 35 -->
+<div class="product-card" id="p35">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=235" alt="Product 35">
+  <h4>Party Wear Gown 4</h4>
+  <p class="price">Rs. 11,200</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Party Wear Gown 4',11200)">Add to Cart</button>
+</div>
+
+<!-- 36 -->
+<div class="product-card" id="p36">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=236" alt="Product 36">
+  <h4>Casual Top 4</h4>
+  <p class="price">Rs. 1,550</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Casual Top 4',1550)">Add to Cart</button>
+</div>
+
+<!-- 37 -->
+<div class="product-card" id="p37">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=237" alt="Product 37">
+  <h4>Denim Jacket 4</h4>
+  <p class="price">Rs. 3,250</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Denim Jacket 4',3250)">Add to Cart</button>
+</div>
+
+<!-- 38 -->
+<div class="product-card" id="p38">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=238" alt="Product 38">
+  <h4>Luxury Suit 4</h4>
+  <p class="price">Rs. 6,450</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Suit 4',6450)">Add to Cart</button>
+</div>
+
+<!-- 39 -->
+<div class="product-card" id="p39">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=239" alt="Product 39">
+  <h4>Elegant Shawl 4</h4>
+  <p class="price">Rs. 1,299</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>One Size</option></select>
+  </div>
+  <button onclick="addToCart('Elegant Shawl 4',1299)">Add to Cart</button>
+</div>
+
+<!-- 40 -->
+<div class="product-card" id="p40">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=240" alt="Product 40">
+  <h4>Classic Outfit 4</h4>
+  <p class="price">Rs. 3,950</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Classic Outfit 4',3950)">Add to Cart</button>
+</div>
+
+<!-- 41 -->
+<div class="product-card" id="p41">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=241" alt="Product 41">
+  <h4>Luxury Lawn Printed 9</h4>
+  <p class="price">Rs. 5,250</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Lawn Printed 9',5250)">Add to Cart</button>
+</div>
+
+<!-- 42 -->
+<div class="product-card" id="p42">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=242" alt="Product 42">
+  <h4>Lawn Printed 10</h4>
+  <p class="price">Rs. 4,050</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Lawn Printed 10',4050)">Add to Cart</button>
+</div>
+
+<!-- 43 -->
+<div class="product-card" id="p43">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=243" alt="Product 43">
+  <h4>Embroidered Kurti 9</h4>
+  <p class="price">Rs. 3,900</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 9',3900)">Add to Cart</button>
+</div>
+
+<!-- 44 -->
+<div class="product-card" id="p44">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=244" alt="Product 44">
+  <h4>Embroidered Kurti 10</h4>
+  <p class="price">Rs. 3,750</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Embroidered Kurti 10',3750)">Add to Cart</button>
+</div>
+
+<!-- 45 -->
+<div class="product-card" id="p45">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=245" alt="Product 45">
+  <h4>Party Wear Gown 5</h4>
+  <p class="price">Rs. 12,000</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Party Wear Gown 5',12000)">Add to Cart</button>
+</div>
+
+<!-- 46 -->
+<div class="product-card" id="p46">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=246" alt="Product 46">
+  <h4>Casual Top 5</h4>
+  <p class="price">Rs. 1,299</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Casual Top 5',1299)">Add to Cart</button>
+</div>
+
+<!-- 47 -->
+<div class="product-card" id="p47">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=247" alt="Product 47">
+  <h4>Denim Jacket 5</h4>
+  <p class="price">Rs. 3,600</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Denim Jacket 5',3600)">Add to Cart</button>
+</div>
+
+<!-- 48 -->
+<div class="product-card" id="p48">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=248" alt="Product 48">
+  <h4>Luxury Suit 5</h4>
+  <p class="price">Rs. 7,350</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Luxury Suit 5',7350)">Add to Cart</button>
+</div>
+
+<!-- 49 -->
+<div class="product-card" id="p49">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=249" alt="Product 49">
+  <h4>Elegant Shawl 5</h4>
+  <p class="price">Rs. 1,499</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>One Size</option></select>
+  </div>
+  <button onclick="addToCart('Elegant Shawl 5',1499)">Add to Cart</button>
+</div>
+
+<!-- 50 -->
+<div class="product-card" id="p50">
+  <img src="https://source.unsplash.com/collection/1424340/600x600?sig=250" alt="Product 50">
+  <h4>Classic Outfit 5</h4>
+  <p class="price">Rs. 4,200</p>
+  <div class="size-row"><label>Size:</label>
+    <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+  </div>
+  <button onclick="addToCart('Classic Outfit 5',4200)">Add to Cart</button>
+</div>
+<!-- END OF 50 PRODUCTS -->
