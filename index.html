@@ -1,35 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sanaya - Premium Fashion</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanaya — Premium Fashion Store</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Sanaya - Premium ladies ethnic & modern wear. Shop by category, featured products, WhatsApp orders." />
 </head>
 <body>
-<header>
-  <h1>Sanaya</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Shop</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button id="mobile-menu-btn" class="hamburger" aria-label="menu">☰</button>
+      <div class="logo">
+        <a href="index.html"><span class="logo-title">Sanaya</span></a>
+      </div>
 
-<section class="hero">
-  <h2>Luxury Ethnic Wear for Women ✨</h2>
-</section>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-<footer>
-  <p>📱 WhatsApp: <a href="https://wa.me/447308416877">+44 7308 416877</a></p>
-  <p>💳 Easypaisa: 03320973810</p>
-  <p>📧 Email: <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
-  <p>🌐 Follow us: 
-    <a href="#">Facebook</a> | 
-    <a href="#">Instagram</a> | 
-    <a href="#">TikTok</a>
-  </p>
-  <p>© 2025 Sanaya. All Rights Reserved.</p>
-</footer>
+      <div class="header-actions">
+        <a class="icon-link" href="#" title="Search">🔍</a>
+        <a class="icon-link" href="#cart" title="Cart">🛒<span id="cart-bubble" class="cart-bubble">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Luxury Ethnic & Modern Wear</h1>
+        <p>New arrivals • High quality fabrics • Handpicked styles</p>
+        <a href="shop.html" class="btn primary">Shop Collection</a>
+      </div>
+      <div class="hero-image">
+        <!-- Unsplash image (replace with images/hero.jpg if you upload) -->
+        <img src="https://source.unsplash.com/collection/190727/900x900?sig=11" alt="Hero Image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories container">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="cat-list">
+      <a class="cat" href="shop.html#cat-printed">
+        <img src="https://source.unsplash.com/collection/1424340/400x400?sig=21" alt="Printed" />
+        <p>Printed</p>
+      </a>
+      <a class="cat" href="shop.html#cat-solids">
+        <img src="https://source.unsplash.com/collection/1424340/400x400?sig=22" alt="Solids" />
+        <p>Solids</p>
+      </a>
+      <a class="cat" href="shop.html#cat-dupatta">
+        <img src="https://source.unsplash.com/collection/1424340/400x400?sig=23" alt="Dupattas" />
+        <p>Dupattas</p>
+      </a>
+      <a class="cat" href="shop.html#cat-footwear">
+        <img src="https://source.unsplash.com/collection/1424340/400x400?sig=24" alt="Footwear" />
+        <p>Footwear</p>
+      </a>
+      <a class="cat" href="shop.html#cat-jewelry">
+        <img src="https://source.unsplash.com/collection/1424340/400x400?sig=25" alt="Jewellery" />
+        <p>Jewellery</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Foundation / About -->
+  <section id="about" class="foundation container">
+    <div class="foundation-card">
+      <img src="https://source.unsplash.com/collection/9643572/400x400?sig=31" alt="foundation" />
+      <div class="foundation-text">
+        <h3>Cultural Human Foundation</h3>
+        <p>Sanaya supports community causes — a portion of proceeds is donated to help education and health projects.</p>
+        <a href="about.html" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products (8) -->
+  <section id="featured" class="featured container">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="products-grid">
+      <!-- We'll display 8 featured product cards here: -->
+      <!-- Product template: -->
+      <div class="product-card">
+        <img src="https://source.unsplash.com/collection/1424340/600x600?sig=101" alt="Product 1">
+        <h4>3 Piece Lawn Printed Suit</h4>
+        <p class="price">Rs. 7,432</p>
+        <div class="size-row">
+          <label>Size:</label>
+          <select aria-label="size">
+            <option>S</option><option>M</option><option>L</option><option>XL</option>
+          </select>
+        </div>
+        <button class="btn primary" onclick="addToCart('3 Piece Lawn Printed Suit',7432)">Add to Cart</button>
+        <a class="btn" href="shop.html#p1">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/collection/1424340/600x600?sig=102" alt="Product 2">
+        <h4>3 Piece Chiffon Dress</h4>
+        <p class="price">Rs. 7,192</p>
+        <div class="size-row"><label>Size:</label>
+          <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+        </div>
+        <button class="btn primary" onclick="addToCart('3 Piece Chiffon Dress',7192)">Add to Cart</button>
+        <a class="btn" href="shop.html#p2">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/collection/1424340/600x600?sig=103" alt="Product 3">
+        <h4>Elegant Party Gown</h4>
+        <p class="price">Rs. 9,500</p>
+        <div class="size-row"><label>Size:</label>
+          <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+        </div>
+        <button class="btn primary" onclick="addToCart('Elegant Party Gown',9500)">Add to Cart</button>
+        <a class="btn" href="shop.html#p3">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/collection/1424340/600x600?sig=104" alt="Product 4">
+        <h4>Modern Casual Top</h4>
+        <p class="price">Rs. 1,350</p>
+        <div class="size-row"><label>Size:</label>
+          <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+        </div>
+        <button class="btn primary" onclick="addToCart('Modern Casual Top',1350)">Add to Cart</button>
+        <a class="btn" href="shop.html#p4">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/collection/1424340/600x600?sig=105" alt="Product 5">
+        <h4>Denim Jacket</h4>
+        <p class="price">Rs. 2,899</p>
+        <div class="size-row"><label>Size:</label>
+          <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+        </div>
+        <button class="btn primary" onclick="addToCart('Denim Jacket',2899)">Add to Cart</button>
+        <a class="btn" href="shop.html#p5">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/collection/1424340/600x600?sig=106" alt="Product 6">
+        <h4>Classic Kurti</h4>
+        <p class="price">Rs. 2,100</p>
+        <div class="size-row"><label>Size:</label>
+          <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+        </div>
+        <button class="btn primary" onclick="addToCart('Classic Kurti',2100)">Add to Cart</button>
+        <a class="btn" href="shop.html#p6">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/collection/1424340/600x600?sig=107" alt="Product 7">
+        <h4>Elegant Shawl</h4>
+        <p class="price">Rs. 1,599</p>
+        <div class="size-row"><label>Size:</label>
+          <select><option>One Size</option></select>
+        </div>
+        <button class="btn primary" onclick="addToCart('Elegant Shawl',1599)">Add to Cart</button>
+        <a class="btn" href="shop.html#p7">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/collection/1424340/600x600?sig=108" alt="Product 8">
+        <h4>Luxury Lawn Suit</h4>
+        <p class="price">Rs. 8,250</p>
+        <div class="size-row"><label>Size:</label>
+          <select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+        </div>
+        <button class="btn primary" onclick="addToCart('Luxury Lawn Suit',8250)">Add to Cart</button>
+        <a class="btn" href="shop.html#p8">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta container">
+    <h3>Looking for something special?</h3>
+    <p>Message us on WhatsApp for custom orders and bulk discounts.</p>
+    <a href="https://wa.me/447308416877" class="btn primary" target="_blank">Chat on WhatsApp</a>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div class="contact-block">
+        <p>📞 WhatsApp: <a href="https://wa.me/447308416877" target="_blank">+44 7308 416877</a></p>
+        <p>💳 Easypaisa: <a href="tel:+923320973810">03320973810</a></p>
+        <p>✉️ Email: <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
+      </div>
+
+      <div class="social-block">
+        <p>Follow us:</p>
+        <a href="#" aria-label="Facebook">Facebook</a> |
+        <a href="#" aria-label="Instagram">Instagram</a> |
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">© 2025 Sanaya. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
