@@ -1,121 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sanaya - Product Page</title>
-  <style>
-    body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; background:#fff; color:#333; }
-    header { background:#f8f8f8; padding:10px 20px; border-bottom:1px solid #ddd; }
-    nav ul { display:flex; list-style:none; margin:0; padding:0; justify-content:center; gap:20px; }
-    nav a { text-decoration:none; color:#333; font-weight:600; }
-    nav a:hover { color:#e91e63; }
-    .container { max-width:1200px; margin:40px auto; padding:20px; display:flex; flex-wrap:wrap; gap:40px; }
-    .gallery { flex:1; }
-    .gallery img { width:100%; border-radius:8px; margin-bottom:10px; }
-    .details { flex:1; }
-    .details h1 { margin:0 0 10px; }
-    .price { font-size:22px; color:#e91e63; font-weight:bold; margin:10px 0; }
-    .sizes, .quantity { margin:15px 0; }
-    .sizes button, .quantity input { margin-right:10px; padding:8px 12px; border:1px solid #ccc; border-radius:5px; cursor:pointer; }
-    .sizes button:hover { background:#e91e63; color:#fff; }
-    .btn { display:inline-block; padding:12px 20px; background:#e91e63; color:#fff; border-radius:5px; text-decoration:none; margin-top:20px; }
-    .description { margin:40px 20px; }
-    .related { background:#fafafa; padding:40px 20px; }
-    .related h2 { text-align:center; margin-bottom:30px; }
-    .grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .product { background:#fff; border:1px solid #ddd; border-radius:8px; width:200px; text-align:center; padding:10px; transition:0.3s; }
-    .product:hover { transform:scale(1.05); box-shadow:0 4px 12px rgba(0,0,0,0.1); }
-    .product img { width:100%; height:200px; object-fit:cover; border-radius:6px; }
-    footer { background:#333; color:#fff; padding:30px 20px; text-align:center; margin-top:40px; }
-    footer a { color:#e91e63; text-decoration:none; }
-  </style>
+  <title>Shop • Sanaya Fashion</title>
+  <link rel="stylesheet" href="style.css">
+  <script>window.SHEETS_CSV_URL='';</script>
 </head>
 <body>
-
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="#">Printed</a></li>
-      <li><a href="#">Solids</a></li>
-      <li><a href="#">Dupattas</a></li>
-      <li><a href="#">Khussas</a></li>
-      <li><a href="#">Jewellery</a></li>
-      <li><a href="#">Cart</a></li>
-    </ul>
-  </nav>
+<header class="header">
+  <div class="container inner">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Sanaya"> Sanaya Fashion</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="actions">
+      <a class="btn ghost" href="cart.html">Cart <span data-cart-count>0</span></a>
+    </div>
+  </div>
 </header>
 
-<div class="container">
-  <!-- Left: Gallery -->
-  <div class="gallery">
-    <img src="https://via.placeholder.com/500x600?text=Product+Main" alt="Product">
-    <img src="https://via.placeholder.com/500x600?text=Product+Side" alt="Product">
-    <img src="https://via.placeholder.com/500x600?text=Product+Back" alt="Product">
+<section class='section container'>
+  <h2>All Products</h2>
+  <div class='filters'>
+    <select id='filterCat'>
+      <option value='all'>All</option>
+      <option value='solids'>Solids</option>
+      <option value='printed'>Printed</option>
+      <option value='dupattas'>Dupattas</option>
+      <option value='khussas'>Khussas</option>
+      <option value='jewellery'>Jewellery</option>
+      <option value='bags'>Bags</option>
+      <option value='accessories'>Accessories</option>
+    </select>
+    <input id='searchQuery' class='input' placeholder='Search products...'>
   </div>
-
-  <!-- Right: Details -->
-  <div class="details">
-    <h1>3 Piece Cambric Dress</h1>
-    <div class="price">Rs. 8,690</div>
-    
-    <div class="sizes">
-      <strong>Size:</strong><br>
-      <button>S</button>
-      <button>M</button>
-      <button>L</button>
-      <button>XL</button>
-    </div>
-
-    <div class="quantity">
-      <strong>Quantity:</strong><br>
-      <input type="number" value="1" min="1" style="width:60px; padding:5px;">
-    </div>
-
-    <a href="#" class="btn">Add to Cart</a>
-    <a href="#" class="btn" style="background:#333; margin-left:10px;">Buy Now</a>
-  </div>
-</div>
-
-<div class="description">
-  <h2>Product Description</h2>
-  <p>
-    This 3 Piece Cambric Dress is crafted with premium quality fabric.  
-    Perfect for casual and semi-formal wear.  
-    Includes shirt, trouser, and dupatta.  
-    Easy to wash and durable stitching.
-  </p>
-</div>
-
-<section class="related">
-  <h2>Related Products</h2>
-  <div class="grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/200x250?text=Product+1" alt="Related">
-      <p>Cambric Dress<br><strong>Rs. 7,890</strong></p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/200x250?text=Product+2" alt="Related">
-      <p>Lawn Printed Dress<br><strong>Rs. 6,490</strong></p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/200x250?text=Product+3" alt="Related">
-      <p>2 Piece Cotton Suit<br><strong>Rs. 5,500</strong></p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/200x250?text=Product+4" alt="Related">
-      <p>Formal Dupatta Set<br><strong>Rs. 4,990</strong></p>
-    </div>
-  </div>
+  <div id='shopGrid'></div>
 </section>
 
 <footer>
-  <p>FREE SHIPPING on orders over Rs.4000 | Support 24/7 | 10 DAYS RETURN / Exchange | 100% PAYMENT SECURE</p>
-  <p>📞 WhatsApp: <a href="https://wa.me/447308416877">+44 7308 416877</a> | 📱 Easypaisa: 0332-0973810 | 📧 <a href="mailto:almasoomking@gmail.com">almasoomking@gmail.com</a></p>
-  <p>&copy; 2025 Sanaya Fashion Store</p>
+  <div class="container grid" style="grid-template-columns:2fr 1fr 1fr">
+    <div>
+      <div class="logo"><img src="images/logo.png" alt=""> Sanaya Fashion</div>
+      <p style="max-width:520px">Premium ladies wear. Update products via Google Sheet or by editing products.json.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="shop.html">All</a><br>
+      <a href="shop.html#solids">Solids</a><br>
+      <a href="shop.html#printed">Printed</a><br>
+      <a href="shop.html#dupattas">Dupattas</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <div>WhatsApp: +44 7308 416877</div>
+      <div>Email: almasoomking@gmail.com</div>
+      <div>© 2025 Sanaya.</div>
+    </div>
+  </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

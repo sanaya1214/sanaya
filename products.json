@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Lawn Printed Dress 1",
+    "name": "Solid Kurta 1",
     "category": "solids",
-    "price": 5089.0,
+    "price": 4662,
     "sizes": [
       "XS",
       "S",
@@ -11,15 +11,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_01.png",
-    "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_01.png",
+    "badge": "Best Seller",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 2,
-    "name": "Lawn Printed Dress 2",
+    "name": "Printed Lawn Dress 2",
     "category": "printed",
-    "price": 8838.0,
+    "price": 6307,
     "sizes": [
       "XS",
       "S",
@@ -27,95 +27,79 @@
       "L",
       "XL"
     ],
-    "image": "images/model_02.png",
-    "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_02.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 3,
-    "name": "Lawn Printed Dress 3",
-    "category": "solids",
-    "price": 5602.0,
+    "name": "Embroidered Dupatta 3",
+    "category": "dupattas",
+    "price": 2647,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_03.png",
-    "badge": "New",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_03.png",
+    "badge": "",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 4,
-    "name": "Lawn Printed Dress 4",
-    "category": "printed",
-    "price": 7483.0,
+    "name": "Classic Khussa 4",
+    "category": "khussas",
+    "price": 3691,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
     ],
-    "image": "images/model_04.png",
+    "image": "images/product_04.png",
     "badge": "-10%",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 5,
-    "name": "Lawn Printed Dress 5",
-    "category": "printed",
-    "price": 7563.0,
+    "name": "Statement Earrings 5",
+    "category": "jewellery",
+    "price": 3192,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_05.png",
+    "image": "images/product_05.png",
     "badge": "New",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 6,
-    "name": "Lawn Printed Dress 6",
-    "category": "dupattas",
-    "price": 5155.0,
+    "name": "Crossbody Bag 6",
+    "category": "bags",
+    "price": 6038,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_06.png",
-    "badge": "-10%",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_06.png",
+    "badge": "Best Seller",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 7,
-    "name": "Lawn Printed Dress 7",
-    "category": "printed",
-    "price": 5486.0,
+    "name": "Silk Scarf 7",
+    "category": "accessories",
+    "price": 1575,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_07.png",
-    "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_07.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 8,
-    "name": "Lawn Printed Dress 8",
+    "name": "Solid Kurta 8",
     "category": "solids",
-    "price": 5363.0,
+    "price": 4887,
     "sizes": [
       "XS",
       "S",
@@ -123,15 +107,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_08.png",
-    "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_08.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 9,
-    "name": "Lawn Printed Dress 9",
-    "category": "dupattas",
-    "price": 8552.0,
+    "name": "Printed Lawn Dress 9",
+    "category": "printed",
+    "price": 5642,
     "sizes": [
       "XS",
       "S",
@@ -139,95 +123,79 @@
       "L",
       "XL"
     ],
-    "image": "images/model_09.png",
-    "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_09.png",
+    "badge": "Best Seller",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 10,
-    "name": "Lawn Printed Dress 10",
-    "category": "solids",
-    "price": 7248.0,
+    "name": "Embroidered Dupatta 10",
+    "category": "dupattas",
+    "price": 2684,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_10.png",
-    "badge": "-10%",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_10.png",
+    "badge": "",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 11,
-    "name": "Lawn Printed Dress 11",
-    "category": "solids",
-    "price": 8301.0,
+    "name": "Classic Khussa 11",
+    "category": "khussas",
+    "price": 4368,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
     ],
-    "image": "images/model_01.png",
+    "image": "images/product_11.png",
     "badge": "New",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 12,
-    "name": "Lawn Printed Dress 12",
-    "category": "dupattas",
-    "price": 6734.0,
+    "name": "Statement Earrings 12",
+    "category": "jewellery",
+    "price": 3157,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_02.png",
-    "badge": "-10%",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_12.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 13,
-    "name": "Lawn Printed Dress 13",
-    "category": "solids",
-    "price": 8763.0,
+    "name": "Crossbody Bag 13",
+    "category": "bags",
+    "price": 5456,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_03.png",
-    "badge": "New",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_13.png",
+    "badge": "",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 14,
-    "name": "Lawn Printed Dress 14",
-    "category": "solids",
-    "price": 8881.0,
+    "name": "Silk Scarf 14",
+    "category": "accessories",
+    "price": 1625,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_04.png",
+    "image": "images/product_14.png",
     "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 15,
-    "name": "Lawn Printed Dress 15",
+    "name": "Solid Kurta 15",
     "category": "solids",
-    "price": 5054.0,
+    "price": 5198,
     "sizes": [
       "XS",
       "S",
@@ -235,15 +203,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_05.png",
-    "badge": "New",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_15.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 16,
-    "name": "Lawn Printed Dress 16",
+    "name": "Printed Lawn Dress 16",
     "category": "printed",
-    "price": 6881.0,
+    "price": 5600,
     "sizes": [
       "XS",
       "S",
@@ -251,63 +219,79 @@
       "L",
       "XL"
     ],
-    "image": "images/model_06.png",
-    "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_16.png",
+    "badge": "Best Seller",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 17,
-    "name": "Lawn Printed Dress 17",
+    "name": "Embroidered Dupatta 17",
     "category": "dupattas",
-    "price": 7265.0,
+    "price": 2594,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_07.png",
-    "badge": "New",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_17.png",
+    "badge": "",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 18,
-    "name": "Lawn Printed Dress 18",
-    "category": "dupattas",
-    "price": 7850.0,
+    "name": "Classic Khussa 18",
+    "category": "khussas",
+    "price": 3771,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
     ],
-    "image": "images/model_08.png",
-    "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_18.png",
+    "badge": "-10%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 19,
-    "name": "Lawn Printed Dress 19",
-    "category": "printed",
-    "price": 5485.0,
+    "name": "Statement Earrings 19",
+    "category": "jewellery",
+    "price": 2857,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+      "Std"
     ],
-    "image": "images/model_09.png",
-    "badge": "-10%",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "image": "images/product_19.png",
+    "badge": "Best Seller",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   },
   {
     "id": 20,
-    "name": "Lawn Printed Dress 20",
-    "category": "dupattas",
-    "price": 7181.0,
+    "name": "Crossbody Bag 20",
+    "category": "bags",
+    "price": 6106,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_20.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 21,
+    "name": "Silk Scarf 21",
+    "category": "accessories",
+    "price": 2668,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_21.png",
+    "badge": "-10%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 22,
+    "name": "Solid Kurta 22",
+    "category": "solids",
+    "price": 5146,
     "sizes": [
       "XS",
       "S",
@@ -315,8 +299,392 @@
       "L",
       "XL"
     ],
-    "image": "images/model_10.png",
+    "image": "images/product_22.png",
+    "badge": "Best Seller",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 23,
+    "name": "Printed Lawn Dress 23",
+    "category": "printed",
+    "price": 5710,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "images/product_23.png",
     "badge": "",
-    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 24,
+    "name": "Embroidered Dupatta 24",
+    "category": "dupattas",
+    "price": 3668,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_24.png",
+    "badge": "Best Seller",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 25,
+    "name": "Classic Khussa 25",
+    "category": "khussas",
+    "price": 4261,
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "image": "images/product_25.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 26,
+    "name": "Statement Earrings 26",
+    "category": "jewellery",
+    "price": 3120,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_26.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 27,
+    "name": "Crossbody Bag 27",
+    "category": "bags",
+    "price": 6154,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_27.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 28,
+    "name": "Silk Scarf 28",
+    "category": "accessories",
+    "price": 1920,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_28.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 29,
+    "name": "Solid Kurta 29",
+    "category": "solids",
+    "price": 5087,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "images/product_29.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 30,
+    "name": "Printed Lawn Dress 30",
+    "category": "printed",
+    "price": 6142,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "images/product_30.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 31,
+    "name": "Embroidered Dupatta 31",
+    "category": "dupattas",
+    "price": 3698,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_31.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 32,
+    "name": "Classic Khussa 32",
+    "category": "khussas",
+    "price": 4239,
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "image": "images/product_32.png",
+    "badge": "-10%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 33,
+    "name": "Statement Earrings 33",
+    "category": "jewellery",
+    "price": 2507,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_33.png",
+    "badge": "Best Seller",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 34,
+    "name": "Crossbody Bag 34",
+    "category": "bags",
+    "price": 5498,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_34.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 35,
+    "name": "Silk Scarf 35",
+    "category": "accessories",
+    "price": 2675,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_35.png",
+    "badge": "-10%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 36,
+    "name": "Solid Kurta 36",
+    "category": "solids",
+    "price": 5074,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "images/product_36.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 37,
+    "name": "Printed Lawn Dress 37",
+    "category": "printed",
+    "price": 6202,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "images/product_37.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 38,
+    "name": "Embroidered Dupatta 38",
+    "category": "dupattas",
+    "price": 3088,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_38.png",
+    "badge": "",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 39,
+    "name": "Classic Khussa 39",
+    "category": "khussas",
+    "price": 3648,
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "image": "images/product_39.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 40,
+    "name": "Statement Earrings 40",
+    "category": "jewellery",
+    "price": 3047,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_40.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 41,
+    "name": "Crossbody Bag 41",
+    "category": "bags",
+    "price": 5336,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_41.png",
+    "badge": "-10%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 42,
+    "name": "Silk Scarf 42",
+    "category": "accessories",
+    "price": 1810,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_42.png",
+    "badge": "-15%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 43,
+    "name": "Solid Kurta 43",
+    "category": "solids",
+    "price": 4862,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "images/product_43.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 44,
+    "name": "Printed Lawn Dress 44",
+    "category": "printed",
+    "price": 5657,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "images/product_44.png",
+    "badge": "",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 45,
+    "name": "Embroidered Dupatta 45",
+    "category": "dupattas",
+    "price": 3672,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_45.png",
+    "badge": "-10%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 46,
+    "name": "Classic Khussa 46",
+    "category": "khussas",
+    "price": 4195,
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "image": "images/product_46.png",
+    "badge": "-10%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 47,
+    "name": "Statement Earrings 47",
+    "category": "jewellery",
+    "price": 3016,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_47.png",
+    "badge": "",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 48,
+    "name": "Crossbody Bag 48",
+    "category": "bags",
+    "price": 5933,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_48.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 49,
+    "name": "Silk Scarf 49",
+    "category": "accessories",
+    "price": 1690,
+    "sizes": [
+      "Std"
+    ],
+    "image": "images/product_49.png",
+    "badge": "-10%",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
+  },
+  {
+    "id": 50,
+    "name": "Solid Kurta 50",
+    "category": "solids",
+    "price": 4969,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "images/product_50.png",
+    "badge": "New",
+    "description": "Premium quality with elegant detailing. Comfortable and stylish for everyday wear."
   }
 ]

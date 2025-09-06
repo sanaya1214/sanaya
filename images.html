@@ -1,60 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sanaya Store</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Images • Sanaya Fashion</title>
+  <link rel="stylesheet" href="style.css">
+  <script>window.SHEETS_CSV_URL='';</script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index.html">Sanaya</a>
+<header class="header">
+  <div class="container inner">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Sanaya"> Sanaya Fashion</a>
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
-      <a href="images.html">Images</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="actions">
-      <a href="cart.html" class="cart-btn" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+      <a class="btn ghost" href="cart.html">Cart <span data-cart-count>0</span></a>
     </div>
   </div>
 </header>
 
-<section class="container">
-  <h1>Gallery</h1>
-  <div class="grid-5" id="gallery"></div>
+<section class='section container'>
+  <h2>Gallery</h2>
+  <div class='grid' style='grid-template-columns:repeat(auto-fill,minmax(220px,1fr))'>
+    <a class='card' href='images/product_01.png' target='_blank'><img src='images/product_01.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_02.png' target='_blank'><img src='images/product_02.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_03.png' target='_blank'><img src='images/product_03.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_04.png' target='_blank'><img src='images/product_04.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_05.png' target='_blank'><img src='images/product_05.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_06.png' target='_blank'><img src='images/product_06.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_07.png' target='_blank'><img src='images/product_07.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_08.png' target='_blank'><img src='images/product_08.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_09.png' target='_blank'><img src='images/product_09.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_10.png' target='_blank'><img src='images/product_10.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_11.png' target='_blank'><img src='images/product_11.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_12.png' target='_blank'><img src='images/product_12.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_13.png' target='_blank'><img src='images/product_13.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_14.png' target='_blank'><img src='images/product_14.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_15.png' target='_blank'><img src='images/product_15.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_16.png' target='_blank'><img src='images/product_16.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_17.png' target='_blank'><img src='images/product_17.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_18.png' target='_blank'><img src='images/product_18.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_19.png' target='_blank'><img src='images/product_19.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_20.png' target='_blank'><img src='images/product_20.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_21.png' target='_blank'><img src='images/product_21.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_22.png' target='_blank'><img src='images/product_22.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_23.png' target='_blank'><img src='images/product_23.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a><a class='card' href='images/product_24.png' target='_blank'><img src='images/product_24.png' alt='Image' style='width:100%;height:220px;object-fit:cover'></a>
+  </div>
 </section>
 
-<footer class="site-footer">
-  <div class="container grid-3">
+<footer>
+  <div class="container grid" style="grid-template-columns:2fr 1fr 1fr">
     <div>
-      <h4>Sanaya</h4>
-      <p>Trendy ladies clothes & online shopping.</p>
+      <div class="logo"><img src="images/logo.png" alt=""> Sanaya Fashion</div>
+      <p style="max-width:520px">Premium ladies wear. Update products via Google Sheet or by editing products.json.</p>
     </div>
     <div>
-      <h4>Contact</h4>
-      <ul>
-        <li>WhatsApp: +44 7308 416877</li>
-        <li>Easypaisa: 03320973810</li>
-        <li>Email: almasoomking@gmail.com</li>
-      </ul>
+      <h4>Shop</h4>
+      <a href="shop.html">All</a><br>
+      <a href="shop.html#solids">Solids</a><br>
+      <a href="shop.html#printed">Printed</a><br>
+      <a href="shop.html#dupattas">Dupattas</a>
     </div>
     <div>
-      <h4>Links</h4>
-      <ul>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <h4>Support</h4>
+      <div>WhatsApp: +44 7308 416877</div>
+      <div>Email: almasoomking@gmail.com</div>
+      <div>© 2025 Sanaya.</div>
     </div>
   </div>
-  <div class="copy">© 2025 Sanaya. All rights reserved.</div>
 </footer>
 <script src="script.js"></script>
 </body>

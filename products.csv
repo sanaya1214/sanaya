@@ -1,21 +1,51 @@
 id,name,category,price,sizes,image,badge,description
-1,Lawn Printed Dress 1,solids,5089.0,XS;S;M;L;XL,images/model_01.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-2,Lawn Printed Dress 2,printed,8838.0,XS;S;M;L;XL,images/model_02.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-3,Lawn Printed Dress 3,solids,5602.0,XS;S;M;L;XL,images/model_03.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-4,Lawn Printed Dress 4,printed,7483.0,XS;S;M;L;XL,images/model_04.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-5,Lawn Printed Dress 5,printed,7563.0,XS;S;M;L;XL,images/model_05.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-6,Lawn Printed Dress 6,dupattas,5155.0,XS;S;M;L;XL,images/model_06.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-7,Lawn Printed Dress 7,printed,5486.0,XS;S;M;L;XL,images/model_07.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-8,Lawn Printed Dress 8,solids,5363.0,XS;S;M;L;XL,images/model_08.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-9,Lawn Printed Dress 9,dupattas,8552.0,XS;S;M;L;XL,images/model_09.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-10,Lawn Printed Dress 10,solids,7248.0,XS;S;M;L;XL,images/model_10.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-11,Lawn Printed Dress 11,solids,8301.0,XS;S;M;L;XL,images/model_01.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-12,Lawn Printed Dress 12,dupattas,6734.0,XS;S;M;L;XL,images/model_02.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-13,Lawn Printed Dress 13,solids,8763.0,XS;S;M;L;XL,images/model_03.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-14,Lawn Printed Dress 14,solids,8881.0,XS;S;M;L;XL,images/model_04.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-15,Lawn Printed Dress 15,solids,5054.0,XS;S;M;L;XL,images/model_05.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-16,Lawn Printed Dress 16,printed,6881.0,XS;S;M;L;XL,images/model_06.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-17,Lawn Printed Dress 17,dupattas,7265.0,XS;S;M;L;XL,images/model_07.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-18,Lawn Printed Dress 18,dupattas,7850.0,XS;S;M;L;XL,images/model_08.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-19,Lawn Printed Dress 19,printed,5485.0,XS;S;M;L;XL,images/model_09.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
-20,Lawn Printed Dress 20,dupattas,7181.0,XS;S;M;L;XL,images/model_10.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+1,Solid Kurta 1,solids,4662,XS;S;M;L;XL,images/product_01.png,Best Seller,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+2,Printed Lawn Dress 2,printed,6307,XS;S;M;L;XL,images/product_02.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+3,Embroidered Dupatta 3,dupattas,2647,Std,images/product_03.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+4,Classic Khussa 4,khussas,3691,36;37;38;39;40,images/product_04.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+5,Statement Earrings 5,jewellery,3192,Std,images/product_05.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+6,Crossbody Bag 6,bags,6038,Std,images/product_06.png,Best Seller,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+7,Silk Scarf 7,accessories,1575,Std,images/product_07.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+8,Solid Kurta 8,solids,4887,XS;S;M;L;XL,images/product_08.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+9,Printed Lawn Dress 9,printed,5642,XS;S;M;L;XL,images/product_09.png,Best Seller,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+10,Embroidered Dupatta 10,dupattas,2684,Std,images/product_10.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+11,Classic Khussa 11,khussas,4368,36;37;38;39;40,images/product_11.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+12,Statement Earrings 12,jewellery,3157,Std,images/product_12.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+13,Crossbody Bag 13,bags,5456,Std,images/product_13.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+14,Silk Scarf 14,accessories,1625,Std,images/product_14.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+15,Solid Kurta 15,solids,5198,XS;S;M;L;XL,images/product_15.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+16,Printed Lawn Dress 16,printed,5600,XS;S;M;L;XL,images/product_16.png,Best Seller,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+17,Embroidered Dupatta 17,dupattas,2594,Std,images/product_17.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+18,Classic Khussa 18,khussas,3771,36;37;38;39;40,images/product_18.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+19,Statement Earrings 19,jewellery,2857,Std,images/product_19.png,Best Seller,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+20,Crossbody Bag 20,bags,6106,Std,images/product_20.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+21,Silk Scarf 21,accessories,2668,Std,images/product_21.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+22,Solid Kurta 22,solids,5146,XS;S;M;L;XL,images/product_22.png,Best Seller,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+23,Printed Lawn Dress 23,printed,5710,XS;S;M;L;XL,images/product_23.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+24,Embroidered Dupatta 24,dupattas,3668,Std,images/product_24.png,Best Seller,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+25,Classic Khussa 25,khussas,4261,36;37;38;39;40,images/product_25.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+26,Statement Earrings 26,jewellery,3120,Std,images/product_26.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+27,Crossbody Bag 27,bags,6154,Std,images/product_27.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+28,Silk Scarf 28,accessories,1920,Std,images/product_28.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+29,Solid Kurta 29,solids,5087,XS;S;M;L;XL,images/product_29.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+30,Printed Lawn Dress 30,printed,6142,XS;S;M;L;XL,images/product_30.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+31,Embroidered Dupatta 31,dupattas,3698,Std,images/product_31.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+32,Classic Khussa 32,khussas,4239,36;37;38;39;40,images/product_32.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+33,Statement Earrings 33,jewellery,2507,Std,images/product_33.png,Best Seller,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+34,Crossbody Bag 34,bags,5498,Std,images/product_34.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+35,Silk Scarf 35,accessories,2675,Std,images/product_35.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+36,Solid Kurta 36,solids,5074,XS;S;M;L;XL,images/product_36.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+37,Printed Lawn Dress 37,printed,6202,XS;S;M;L;XL,images/product_37.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+38,Embroidered Dupatta 38,dupattas,3088,Std,images/product_38.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+39,Classic Khussa 39,khussas,3648,36;37;38;39;40,images/product_39.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+40,Statement Earrings 40,jewellery,3047,Std,images/product_40.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+41,Crossbody Bag 41,bags,5336,Std,images/product_41.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+42,Silk Scarf 42,accessories,1810,Std,images/product_42.png,-15%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+43,Solid Kurta 43,solids,4862,XS;S;M;L;XL,images/product_43.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+44,Printed Lawn Dress 44,printed,5657,XS;S;M;L;XL,images/product_44.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+45,Embroidered Dupatta 45,dupattas,3672,Std,images/product_45.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+46,Classic Khussa 46,khussas,4195,36;37;38;39;40,images/product_46.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+47,Statement Earrings 47,jewellery,3016,Std,images/product_47.png,,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+48,Crossbody Bag 48,bags,5933,Std,images/product_48.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+49,Silk Scarf 49,accessories,1690,Std,images/product_49.png,-10%,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
+50,Solid Kurta 50,solids,4969,XS;S;M;L;XL,images/product_50.png,New,Premium quality with elegant detailing. Comfortable and stylish for everyday wear.
