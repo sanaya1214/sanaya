@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Designer Sharara 1",
-    "category": "sharara",
-    "price": 32280,
+    "name": "Lawn Printed Dress 1",
+    "category": "solids",
+    "price": 5089.0,
     "sizes": [
       "XS",
       "S",
@@ -11,27 +11,31 @@
       "L",
       "XL"
     ],
-    "image": "images/model_01.jpg",
+    "image": "images/model_01.png",
     "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 2,
-    "name": "Silk Shawl 2",
-    "category": "shawl",
-    "price": 36593,
+    "name": "Lawn Printed Dress 2",
+    "category": "printed",
+    "price": 8838.0,
     "sizes": [
-      "One Size"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "image": "images/model_02.jpg",
-    "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_02.png",
+    "badge": "",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 3,
-    "name": "Embroidered Lehenga 3",
-    "category": "lehenga",
-    "price": 89079,
+    "name": "Lawn Printed Dress 3",
+    "category": "solids",
+    "price": 5602.0,
     "sizes": [
       "XS",
       "S",
@@ -39,15 +43,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_03.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_03.png",
+    "badge": "New",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 4,
-    "name": "Embroidered Lehenga 4",
-    "category": "lehenga",
-    "price": 126988,
+    "name": "Lawn Printed Dress 4",
+    "category": "printed",
+    "price": 7483.0,
     "sizes": [
       "XS",
       "S",
@@ -55,15 +59,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_04.jpg",
-    "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_04.png",
+    "badge": "-10%",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 5,
-    "name": "Embroidered Lehenga 5",
-    "category": "lehenga",
-    "price": 47507,
+    "name": "Lawn Printed Dress 5",
+    "category": "printed",
+    "price": 7563.0,
     "sizes": [
       "XS",
       "S",
@@ -71,15 +75,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_05.jpg",
+    "image": "images/model_05.png",
     "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 6,
-    "name": "Designer Sharara 6",
-    "category": "sharara",
-    "price": 130637,
+    "name": "Lawn Printed Dress 6",
+    "category": "dupattas",
+    "price": 5155.0,
     "sizes": [
       "XS",
       "S",
@@ -87,27 +91,31 @@
       "L",
       "XL"
     ],
-    "image": "images/model_06.jpg",
+    "image": "images/model_06.png",
     "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 7,
-    "name": "Gold-Plated Earrings 7",
-    "category": "jewellery",
-    "price": 56507,
+    "name": "Lawn Printed Dress 7",
+    "category": "printed",
+    "price": 5486.0,
     "sizes": [
-      "One Size"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "image": "images/model_07.jpg",
+    "image": "images/model_07.png",
     "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 8,
-    "name": "Embroidered Lehenga 8",
-    "category": "lehenga",
-    "price": 95512,
+    "name": "Lawn Printed Dress 8",
+    "category": "solids",
+    "price": 5363.0,
     "sizes": [
       "XS",
       "S",
@@ -115,39 +123,47 @@
       "L",
       "XL"
     ],
-    "image": "images/model_08.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_08.png",
+    "badge": "",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 9,
-    "name": "Gold-Plated Earrings 9",
-    "category": "jewellery",
-    "price": 126408,
+    "name": "Lawn Printed Dress 9",
+    "category": "dupattas",
+    "price": 8552.0,
     "sizes": [
-      "One Size"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "image": "images/model_09.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_09.png",
+    "badge": "",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 10,
-    "name": "Silk Shawl 10",
-    "category": "shawl",
-    "price": 129281,
+    "name": "Lawn Printed Dress 10",
+    "category": "solids",
+    "price": 7248.0,
     "sizes": [
-      "One Size"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "image": "images/model_10.jpg",
+    "image": "images/model_10.png",
     "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 11,
-    "name": "Evening Gown 11",
-    "category": "gown",
-    "price": 105549,
+    "name": "Lawn Printed Dress 11",
+    "category": "solids",
+    "price": 8301.0,
     "sizes": [
       "XS",
       "S",
@@ -155,15 +171,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_11.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_01.png",
+    "badge": "New",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 12,
-    "name": "Designer Sharara 12",
-    "category": "sharara",
-    "price": 90079,
+    "name": "Lawn Printed Dress 12",
+    "category": "dupattas",
+    "price": 6734.0,
     "sizes": [
       "XS",
       "S",
@@ -171,15 +187,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_12.jpg",
+    "image": "images/model_02.png",
     "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 13,
-    "name": "Bridal Dress 13",
-    "category": "bridal",
-    "price": 60069,
+    "name": "Lawn Printed Dress 13",
+    "category": "solids",
+    "price": 8763.0,
     "sizes": [
       "XS",
       "S",
@@ -187,39 +203,47 @@
       "L",
       "XL"
     ],
-    "image": "images/model_13.jpg",
+    "image": "images/model_03.png",
     "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 14,
-    "name": "Silk Shawl 14",
-    "category": "shawl",
-    "price": 149426,
+    "name": "Lawn Printed Dress 14",
+    "category": "solids",
+    "price": 8881.0,
     "sizes": [
-      "One Size"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "image": "images/model_14.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_04.png",
+    "badge": "",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 15,
-    "name": "Gold-Plated Earrings 15",
-    "category": "jewellery",
-    "price": 135169,
+    "name": "Lawn Printed Dress 15",
+    "category": "solids",
+    "price": 5054.0,
     "sizes": [
-      "One Size"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
     ],
-    "image": "images/model_15.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_05.png",
+    "badge": "New",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 16,
-    "name": "Embroidered Lehenga 16",
-    "category": "lehenga",
-    "price": 108694,
+    "name": "Lawn Printed Dress 16",
+    "category": "printed",
+    "price": 6881.0,
     "sizes": [
       "XS",
       "S",
@@ -227,15 +251,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_16.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_06.png",
+    "badge": "",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 17,
-    "name": "Bridal Dress 17",
-    "category": "bridal",
-    "price": 148203,
+    "name": "Lawn Printed Dress 17",
+    "category": "dupattas",
+    "price": 7265.0,
     "sizes": [
       "XS",
       "S",
@@ -243,15 +267,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_17.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_07.png",
+    "badge": "New",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 18,
-    "name": "Embroidered Lehenga 18",
-    "category": "lehenga",
-    "price": 37381,
+    "name": "Lawn Printed Dress 18",
+    "category": "dupattas",
+    "price": 7850.0,
     "sizes": [
       "XS",
       "S",
@@ -259,15 +283,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_18.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "image": "images/model_08.png",
+    "badge": "",
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 19,
-    "name": "Designer Sharara 19",
-    "category": "sharara",
-    "price": 81860,
+    "name": "Lawn Printed Dress 19",
+    "category": "printed",
+    "price": 5485.0,
     "sizes": [
       "XS",
       "S",
@@ -275,15 +299,15 @@
       "L",
       "XL"
     ],
-    "image": "images/model_19.jpg",
+    "image": "images/model_09.png",
     "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   },
   {
     "id": 20,
-    "name": "Evening Gown 20",
-    "category": "gown",
-    "price": 138217,
+    "name": "Lawn Printed Dress 20",
+    "category": "dupattas",
+    "price": 7181.0,
     "sizes": [
       "XS",
       "S",
@@ -291,440 +315,8 @@
       "L",
       "XL"
     ],
-    "image": "images/model_20.jpg",
-    "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 21,
-    "name": "Designer Sharara 21",
-    "category": "sharara",
-    "price": 105290,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_21.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 22,
-    "name": "Designer Sharara 22",
-    "category": "sharara",
-    "price": 140043,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_22.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 23,
-    "name": "Embroidered Lehenga 23",
-    "category": "lehenga",
-    "price": 99641,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_23.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 24,
-    "name": "Bridal Dress 24",
-    "category": "bridal",
-    "price": 68122,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_24.jpg",
-    "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 25,
-    "name": "Evening Gown 25",
-    "category": "gown",
-    "price": 123394,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_25.jpg",
+    "image": "images/model_10.png",
     "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 26,
-    "name": "Gold-Plated Earrings 26",
-    "category": "jewellery",
-    "price": 123509,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_26.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 27,
-    "name": "Silk Shawl 27",
-    "category": "shawl",
-    "price": 86180,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_27.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 28,
-    "name": "Silk Shawl 28",
-    "category": "shawl",
-    "price": 26434,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_28.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 29,
-    "name": "Gold-Plated Earrings 29",
-    "category": "jewellery",
-    "price": 68582,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_29.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 30,
-    "name": "Silk Shawl 30",
-    "category": "shawl",
-    "price": 49275,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_30.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 31,
-    "name": "Gold-Plated Earrings 31",
-    "category": "jewellery",
-    "price": 54219,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_01.jpg",
-    "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 32,
-    "name": "Bridal Dress 32",
-    "category": "bridal",
-    "price": 77442,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_02.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 33,
-    "name": "Bridal Dress 33",
-    "category": "bridal",
-    "price": 68561,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_03.jpg",
-    "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 34,
-    "name": "Evening Gown 34",
-    "category": "gown",
-    "price": 130975,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_04.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 35,
-    "name": "Embroidered Lehenga 35",
-    "category": "lehenga",
-    "price": 148503,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_05.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 36,
-    "name": "Silk Shawl 36",
-    "category": "shawl",
-    "price": 45483,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_06.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 37,
-    "name": "Gold-Plated Earrings 37",
-    "category": "jewellery",
-    "price": 96604,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_07.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 38,
-    "name": "Bridal Dress 38",
-    "category": "bridal",
-    "price": 113177,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_08.jpg",
-    "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 39,
-    "name": "Gold-Plated Earrings 39",
-    "category": "jewellery",
-    "price": 33576,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_09.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 40,
-    "name": "Embroidered Lehenga 40",
-    "category": "lehenga",
-    "price": 71515,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_10.jpg",
-    "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 41,
-    "name": "Silk Shawl 41",
-    "category": "shawl",
-    "price": 145591,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_11.jpg",
-    "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 42,
-    "name": "Bridal Dress 42",
-    "category": "bridal",
-    "price": 109878,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_12.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 43,
-    "name": "Silk Shawl 43",
-    "category": "shawl",
-    "price": 63073,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_13.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 44,
-    "name": "Embroidered Lehenga 44",
-    "category": "lehenga",
-    "price": 30337,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_14.jpg",
-    "badge": "Best Seller",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 45,
-    "name": "Embroidered Lehenga 45",
-    "category": "lehenga",
-    "price": 35715,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_15.jpg",
-    "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 46,
-    "name": "Bridal Dress 46",
-    "category": "bridal",
-    "price": 69033,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_16.jpg",
-    "badge": "New",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 47,
-    "name": "Designer Sharara 47",
-    "category": "sharara",
-    "price": 123527,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_17.jpg",
-    "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 48,
-    "name": "Embroidered Lehenga 48",
-    "category": "lehenga",
-    "price": 79162,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_18.jpg",
-    "badge": "-10%",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 49,
-    "name": "Gold-Plated Earrings 49",
-    "category": "jewellery",
-    "price": 49134,
-    "sizes": [
-      "One Size"
-    ],
-    "image": "images/model_19.jpg",
-    "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
-  },
-  {
-    "id": 50,
-    "name": "Designer Sharara 50",
-    "category": "sharara",
-    "price": 50025,
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "image": "images/model_20.jpg",
-    "badge": "",
-    "description": "High-quality fabric with premium embroidery and finishing."
+    "description": "Comfortable premium fabric with elegant detailing. Perfect for all occasions."
   }
 ]

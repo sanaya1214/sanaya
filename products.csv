@@ -1,51 +1,21 @@
 id,name,category,price,sizes,image,badge,description
-1,Designer Sharara 1,sharara,32280,XS;S;M;L;XL,images/model_01.jpg,,High-quality fabric with premium embroidery and finishing.
-2,Silk Shawl 2,shawl,36593,One Size,images/model_02.jpg,New,High-quality fabric with premium embroidery and finishing.
-3,Embroidered Lehenga 3,lehenga,89079,XS;S;M;L;XL,images/model_03.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-4,Embroidered Lehenga 4,lehenga,126988,XS;S;M;L;XL,images/model_04.jpg,,High-quality fabric with premium embroidery and finishing.
-5,Embroidered Lehenga 5,lehenga,47507,XS;S;M;L;XL,images/model_05.jpg,New,High-quality fabric with premium embroidery and finishing.
-6,Designer Sharara 6,sharara,130637,XS;S;M;L;XL,images/model_06.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-7,Gold-Plated Earrings 7,jewellery,56507,One Size,images/model_07.jpg,,High-quality fabric with premium embroidery and finishing.
-8,Embroidered Lehenga 8,lehenga,95512,XS;S;M;L;XL,images/model_08.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-9,Gold-Plated Earrings 9,jewellery,126408,One Size,images/model_09.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-10,Silk Shawl 10,shawl,129281,One Size,images/model_10.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-11,Evening Gown 11,gown,105549,XS;S;M;L;XL,images/model_11.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-12,Designer Sharara 12,sharara,90079,XS;S;M;L;XL,images/model_12.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-13,Bridal Dress 13,bridal,60069,XS;S;M;L;XL,images/model_13.jpg,New,High-quality fabric with premium embroidery and finishing.
-14,Silk Shawl 14,shawl,149426,One Size,images/model_14.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-15,Gold-Plated Earrings 15,jewellery,135169,One Size,images/model_15.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-16,Embroidered Lehenga 16,lehenga,108694,XS;S;M;L;XL,images/model_16.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-17,Bridal Dress 17,bridal,148203,XS;S;M;L;XL,images/model_17.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-18,Embroidered Lehenga 18,lehenga,37381,XS;S;M;L;XL,images/model_18.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-19,Designer Sharara 19,sharara,81860,XS;S;M;L;XL,images/model_19.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-20,Evening Gown 20,gown,138217,XS;S;M;L;XL,images/model_20.jpg,New,High-quality fabric with premium embroidery and finishing.
-21,Designer Sharara 21,sharara,105290,XS;S;M;L;XL,images/model_21.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-22,Designer Sharara 22,sharara,140043,XS;S;M;L;XL,images/model_22.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-23,Embroidered Lehenga 23,lehenga,99641,XS;S;M;L;XL,images/model_23.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-24,Bridal Dress 24,bridal,68122,XS;S;M;L;XL,images/model_24.jpg,New,High-quality fabric with premium embroidery and finishing.
-25,Evening Gown 25,gown,123394,XS;S;M;L;XL,images/model_25.jpg,,High-quality fabric with premium embroidery and finishing.
-26,Gold-Plated Earrings 26,jewellery,123509,One Size,images/model_26.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-27,Silk Shawl 27,shawl,86180,One Size,images/model_27.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-28,Silk Shawl 28,shawl,26434,One Size,images/model_28.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-29,Gold-Plated Earrings 29,jewellery,68582,One Size,images/model_29.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-30,Silk Shawl 30,shawl,49275,One Size,images/model_30.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-31,Gold-Plated Earrings 31,jewellery,54219,One Size,images/model_01.jpg,New,High-quality fabric with premium embroidery and finishing.
-32,Bridal Dress 32,bridal,77442,XS;S;M;L;XL,images/model_02.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-33,Bridal Dress 33,bridal,68561,XS;S;M;L;XL,images/model_03.jpg,New,High-quality fabric with premium embroidery and finishing.
-34,Evening Gown 34,gown,130975,XS;S;M;L;XL,images/model_04.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-35,Embroidered Lehenga 35,lehenga,148503,XS;S;M;L;XL,images/model_05.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-36,Silk Shawl 36,shawl,45483,One Size,images/model_06.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-37,Gold-Plated Earrings 37,jewellery,96604,One Size,images/model_07.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-38,Bridal Dress 38,bridal,113177,XS;S;M;L;XL,images/model_08.jpg,New,High-quality fabric with premium embroidery and finishing.
-39,Gold-Plated Earrings 39,jewellery,33576,One Size,images/model_09.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-40,Embroidered Lehenga 40,lehenga,71515,XS;S;M;L;XL,images/model_10.jpg,,High-quality fabric with premium embroidery and finishing.
-41,Silk Shawl 41,shawl,145591,One Size,images/model_11.jpg,,High-quality fabric with premium embroidery and finishing.
-42,Bridal Dress 42,bridal,109878,XS;S;M;L;XL,images/model_12.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-43,Silk Shawl 43,shawl,63073,One Size,images/model_13.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-44,Embroidered Lehenga 44,lehenga,30337,XS;S;M;L;XL,images/model_14.jpg,Best Seller,High-quality fabric with premium embroidery and finishing.
-45,Embroidered Lehenga 45,lehenga,35715,XS;S;M;L;XL,images/model_15.jpg,New,High-quality fabric with premium embroidery and finishing.
-46,Bridal Dress 46,bridal,69033,XS;S;M;L;XL,images/model_16.jpg,New,High-quality fabric with premium embroidery and finishing.
-47,Designer Sharara 47,sharara,123527,XS;S;M;L;XL,images/model_17.jpg,,High-quality fabric with premium embroidery and finishing.
-48,Embroidered Lehenga 48,lehenga,79162,XS;S;M;L;XL,images/model_18.jpg,-10%,High-quality fabric with premium embroidery and finishing.
-49,Gold-Plated Earrings 49,jewellery,49134,One Size,images/model_19.jpg,,High-quality fabric with premium embroidery and finishing.
-50,Designer Sharara 50,sharara,50025,XS;S;M;L;XL,images/model_20.jpg,,High-quality fabric with premium embroidery and finishing.
+1,Lawn Printed Dress 1,solids,5089.0,XS;S;M;L;XL,images/model_01.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+2,Lawn Printed Dress 2,printed,8838.0,XS;S;M;L;XL,images/model_02.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+3,Lawn Printed Dress 3,solids,5602.0,XS;S;M;L;XL,images/model_03.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+4,Lawn Printed Dress 4,printed,7483.0,XS;S;M;L;XL,images/model_04.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+5,Lawn Printed Dress 5,printed,7563.0,XS;S;M;L;XL,images/model_05.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+6,Lawn Printed Dress 6,dupattas,5155.0,XS;S;M;L;XL,images/model_06.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+7,Lawn Printed Dress 7,printed,5486.0,XS;S;M;L;XL,images/model_07.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+8,Lawn Printed Dress 8,solids,5363.0,XS;S;M;L;XL,images/model_08.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+9,Lawn Printed Dress 9,dupattas,8552.0,XS;S;M;L;XL,images/model_09.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+10,Lawn Printed Dress 10,solids,7248.0,XS;S;M;L;XL,images/model_10.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+11,Lawn Printed Dress 11,solids,8301.0,XS;S;M;L;XL,images/model_01.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+12,Lawn Printed Dress 12,dupattas,6734.0,XS;S;M;L;XL,images/model_02.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+13,Lawn Printed Dress 13,solids,8763.0,XS;S;M;L;XL,images/model_03.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+14,Lawn Printed Dress 14,solids,8881.0,XS;S;M;L;XL,images/model_04.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+15,Lawn Printed Dress 15,solids,5054.0,XS;S;M;L;XL,images/model_05.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+16,Lawn Printed Dress 16,printed,6881.0,XS;S;M;L;XL,images/model_06.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+17,Lawn Printed Dress 17,dupattas,7265.0,XS;S;M;L;XL,images/model_07.png,New,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+18,Lawn Printed Dress 18,dupattas,7850.0,XS;S;M;L;XL,images/model_08.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+19,Lawn Printed Dress 19,printed,5485.0,XS;S;M;L;XL,images/model_09.png,-10%,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
+20,Lawn Printed Dress 20,dupattas,7181.0,XS;S;M;L;XL,images/model_10.png,,Comfortable premium fabric with elegant detailing. Perfect for all occasions.
